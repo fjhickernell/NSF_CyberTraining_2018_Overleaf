@@ -1,0 +1,196 @@
+\documentclass[11pt]{NSFamsart}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref,accents,booktabs}
+\usepackage{cleveref}
+\newcommand{\myshade}{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{Aquamarine}
+\colorlet{myurlcolor}{YellowOrange}
+\hypersetup{ %make the links stand out
+	linkcolor  = mylinkcolor!\myshade!black,
+	citecolor  = mycitecolor!\myshade!black,
+	urlcolor   = myurlcolor!\myshade!black,
+	colorlinks = true,
+}
+
+\providecommand{\FJHickernell}{Hickernell}
+
+% Everyone feel free to add their own note definition here
+\newcommand{\FJHNote}[1]{{\textcolor{blue}{FJH: #1}}}
+
+
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\headsep-0.6in
+%\headsep-0.45in
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\textheight9in
+%\textheight9.1in
+\begin{document}
+[Draft Title:]  	CyberTraining: CIC:  Training Those Who Will Build the Next-Generation Cyberinfrastructure for Research
+
+\centerline{\Large \textbf{Project Description}}
+\vspace{-2ex}
+
+\setcounter{tocdepth}{1}
+\tableofcontents %Help the readers navigate the proposal
+
+\vspace{-6ex}
+
+\section{Introduction}
+Computational science draws upon the strengths of several disciplines, including computer science, mathematical science, and natural science.  Realizing the full potential of computational science for discovery requires multidisciplinary teams of whose members can take full advantage of advanced hardware architectures and software environments.  These computational scientists require
+
+\begin{itemize}
+\item Depth within their chosen disciplines plus breadth across relevant disciplines, overcoming a silo mentality, and
+\item Experience with advanced cyberinfrastructure, including the practices that extend beyond what is required for computation on a personal workstation.
+\end{itemize}
+
+The newly established Center for Interdisciplinary Scientific Computation (CISC) at Illinois Institute of Technology will lead the development of a new program to educate computational scientists that have the above attributes.  Our target will be high school students through post-doctoral scholars.  Learning will be curricular, co-curricular, and extra-curricular.  We will partner with nearby national laboratories, companies engaged in advanced computing, and schools whose students have less access to research experience and high-end computing facilities.
+
+\subsection{The Challenges}
+\emph{Silos.}  Complex scientific problems that are amenable to computational solutions must be attacked by interdisciplinary teams of computational scientists.  Computational science draws on multiple disciplines, including computer science, mathematical science, and natural sciences.  Students pursuing degrees in a particular discipline gain a deep understanding of that discipline, which is necessary but insufficient training for a computational scientist:
+\begin{itemize}
+\item Computer scientists understand how emerging languages and architectures enable faster computation.  
+
+\item Computational mathematicians understand how to precisely describe the errors in numerical algorithms and the statistical errors in inference from data.  
+
+\item Computational biologists, chemists, and physicists grasp the underlying scientific ideas that need to be captured by computations.  
+
+\end{itemize}
+Good computational scientists help grow their own disciplines.  At the same time, they must be conversant in these other disciplines so that they can be effective members of  interdisciplinary teams tackling large, complex computational science problems.
+
+\emph{Professional Practices for Large Scale Computation.}  Solving large, complex computational problems requires effective use of advanced cyberinfrastructure, which most students lack the opportunity to learn.  Computation using multiple processors and distributed memory requires a different mindset than computation on a personal workstation.  
+
+\begin{itemize}
+
+\item Effective algorithms for personal workstations may need substantial modification to take advantage of muti-core architectures.
+
+\item The software required to solve large may be drawn from multiple sources, be written in several languages, and be developed over the course of years or decades.  
+
+
+\item Those using the software must navigate this maze and ensure that their results can be reproduced by others who come after them \cite{Pen11}.  
+
+\item Those contributing new software tools must ensure that their software is robust, can interact well with other software, and can be built upon by those who come afterwards.  See \cite{BSS18} for a recent effort to promote these principles broadly.
+
+\end{itemize}
+Unfortunately, good professional practices for large scale computing are not conveniently learned in traditional coursework.
+
+\subsection{Why CISC Can Address These Challenges}
+CISC was created in May 2017 to leverage Illinois Tech’s existing strengths in computational science for greater impact.  CISC has has been endowed with office space, a modest budget, a 256-core cluster, and the good will of supporters among the faculty and administrators.  Fred J. Hickernell (FJH), PI and CISC’s director, is one of several computational mathematicians at Illinois Tech and previously served for twelve years as chair of the applied (and only) mathematics department.  Our computer science department has a historically strong group in high performance computing led by Xian-He Sun (XHS), a co-PI.  In recent years the biology, chemistry, and physics departments have hired computational scientists, including co-PIs David Minh (DM) (chemistry) and Jeff Wereszczynski (JW) (physics).  Co-PI Sou-Cheng Choi is a lead researcher at Allstate and a research associate professor in applied mathematics.
+
+The (co-)PIs have experience developing curricula, mentoring high school students through PhD students, and partnering with College of DuPage, Argonne National Laboratory, and Fermilab.  Our proposed innovations will build upon our track record to build a strong multi-faceted training program for computational scientists.
+
+\section{Results from Prior NSF Support} \FJHNote{Everyone needs to fill out their previous experience, need subsections on intellectual merit and broader impacts}
+\subsection{Experience of FJH and SCC}
+NSF-DMS-1522687\except{toc}{, \emph{Stable, Efficient, Adaptive Algorithms for Approximation and 
+Integration}, \$270,000, August 2015 -- July 2018.} \label{SectFJHPrevious}  FJH is PI and SCC is senior personnel.  
+
+\subsubsection{Intellectual Merit}
+One of the primary outcomes of this project related to the present proposal is the development of the Guaranteed Automatic Integration Library (GAIL) \cite{ChoEtal17b}.  This library comprises univariate and multivariate integration, univariate function approximation, and univariate optimization algorithms that automatically determine the sample size required to meet user-defined error tolerances.  The library does not rely on interval arithmetic, as is done in INTLAB \cite{MoKeCl09, Rum99a, Rum10a}, but like INTLAB, GAIL comes with theoretical guarantees that common adaptive algorithms lack. The recent GAIL developments include locally adaptive function approximation and optimization \cite{ChoEtal17a, Din15a}, adaptive quasi-Monte Carlo cubature \cite{HicJim16a, JimHic16a}, and the ability to set a hybrid error tolerance involving both absolute and relative error criteria \cite{HicEtal17a}.  Other Articles, theses,  software, and preprints supported in part by this grant include 
+\cite{ala_augmented_2017, 
+	GilEtal16a,
+	GilJim16b,
+	HicEtal18a,	
+	Hic17a,
+	JohFasHic18a,
+	Li16a,
+	Liu17a,
+	mccourt_stable_2017,
+	mishra_hybrid_nodate,
+	mishra_stable_nodate, 
+	rashidinia_stable_nodate,
+	vu_rbf-fd_nodate,
+	Zha17a,
+	Zho15a,
+	ZhoHic15a}.
+    
+\subsubsection{Broader Impacts}  Three students (two female) have completed their PhD degrees, and three PhD students are in the midst of their PhD degrees.  One PhD graduate spent time working at Fermilab as a student helping them implement modern Monte Carlo methods.  Another PhD student is picking up where the first one left off.  Two students (one female) completed their MS theses, and one female student has nearly completed her MS thesis. More than a dozen undergraduate students have been mentored (primarily during the summer),  over the course of three summers.  FJH has embedded the new adaptive (quasi-)Monte Carlo research in his yearly graduate Monte Carlo class, and some students in that class have contributed to GAIL.  FJH and SCC and their students have written an encyclopedia article, given numerous conference and colloquium talks, and organized a conference and special conference sessions at multiple conferences.  FJH has given an invited conference tutorial and is one of the program leaders for this year's SAMSI program on quasi-Monte Carlo sampling.  FJH received the 2016 Joseph F.\ Traub Prize for Achievement in Information-Based Complexity.
+
+
+
+
+
+
+\subsection{Experience of XHS}
+
+\subsection{Experience of DM}
+
+\subsection{Experience of JW}
+
+
+
+\section{Intellectual Merit}
+Our proposed innovations are targeted 
+
+\subsection{Enriched coursework across the curriculum} At present Illinois Tech has  \FJHNote{list what we have already} 
+\begin{itemize} 
+
+\item \FJHNote{computer science offerings}
+
+\item A computational mathematics specialization within the BS Applied Mathematics, four undergraduate computational mathematics courses (one required), and five(?) graduate computational mathematical courses
+
+\end{itemize}
+
+However, 
+
+
+\subsection{Summer camps for high school students} For several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.
+
+We propose to broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing.  This will encourage them to pursue degrees involving high performance computation and better prepare them for careers as computational sciences.  We also hope to attract them to Illinois Tech's computational science offerings
+
+
+\subsection{Post-doctoral scholars} 
+\subsection{Residencies for graduate students in other research groups}
+\subsection{Sharing of coursework across majors}
+\subsection{Summer internships} \FJHNote{Jeff please write this/}
+\subsection{Research experiences for underserved undergraduate students}
+\subsection{Summer camps for high school students}
+
+
+
+
+\section{Broader Impacts}
+\section{Evaluation}
+
+
+\newpage
+\clearpage
+%\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\bibliographystyle{spbasic}
+
+{\renewcommand\addcontentsline[3]{} 
+\renewcommand{\refname}{{\Large\textbf{References Cited}}}                   %%
+\renewcommand{\bibliofont}{\normalsize}
+
+\bibliography{FJH23,FJHown23,GregPapers}}
+
+\end{document}
+
+Review-specific criteria
+1. Challenges addressed in training, education, and workforce development;
+2. New modes of discovery and use of advanced CI resources, tools, and services in fundamental research enabled;
+3. Advances in integrating skills in advanced CI as well as computational and data science and engineering into institutional and disciplinary curriculum/instructional material;
+4. Steps to broaden access and community adoption with respect to the Nation’s scientific and engineering research workforce and advanced CI;
+5. Stakeholders engaged and partnerships forged for collective impact;
+6. Scalability to a large number of people directly and indirectly, and sustainability of key aspects beyond NSF funding; and
+7. Plans for recruitment and assessment.
+
+Proposals must clearly address the following solicitation-specific review criteria through well-identified proposal elements:
+1. Are the training, education, and research workforce challenges identified sound?
+2. What is the potential of the project to enable new modes of discovery and use of advanced CI resources, tools, and services in fundamental research?
+3. How well would the project advance the goal of integrating skills in advanced CI as well as computational and data science and engineering into institutional and disciplinary curriculum/instructional material?
+4. To what extent can the project meet its broadening access and community adoption challenges with respect to the Nation’s scientific and engineering research workforce and advanced CI?
+5. How well would the project engage key stakeholders and forge partnerships for collective impact?
+6. What is the potential for the project to scale and for its key aspects to be sustained beyond NSF funding?
+7. Are the plans for recruitment and evaluation sound?
+8. Are the plans for management and collaboration effective?
+
