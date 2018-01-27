@@ -1,0 +1,38 @@
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref,accents,booktabs}
+\usepackage{cleveref}
+% This package prints the labels in the margin
+%\usepackage[notref,notcite]{showkeys}
+
+
+
+
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\headsep-0.6in
+\textwidth6.5in
+\oddsidemargin0in
+\evensidemargin0in
+\textheight9in
+
+\newcommand{\myshade}{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{Aquamarine}
+\colorlet{myurlcolor}{YellowOrange}
+\hypersetup{ %make the links stand out
+	linkcolor  = mylinkcolor!\myshade!black,
+	citecolor  = mycitecolor!\myshade!black,
+	urlcolor   = myurlcolor!\myshade!black,
+	colorlinks = true,
+}
+
+\providecommand{\FJHickernell}{Hickernell}
+
+% Everyone feel free to add their own note definitions here
+\newcommand{\FJHNote}[1]{{\textcolor{blue}{FJH: #1}}}
+
+
