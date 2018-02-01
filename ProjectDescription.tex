@@ -39,27 +39,19 @@ The newly established Center for Interdisciplinary Scientific Computation (CISC)
 \subsection*{The Challenges}
 Computing solutions to complex scientific problems requires well-educated computational scientists.  Successful attempts to train computational scientists must overcome two kinds of challenges.
 
-\subsubsection*{Academic Silos.} Computational science draws on multiple disciplines, including computer science, mathematical science, and natural sciences.  Students must gain a a deep understanding of their chosen discipline:
-
-{\color{green}[DM: Should this sentence anticipate going beyond the single discipline?]}
+\subsubsection*{Academic Silos.} Computational science draws on multiple disciplines, including computer science, mathematical science, and natural sciences.  Students must gain a deep understanding of their chosen discipline:
 
 \begin{itemize}
-\item Computer scientists must understand how emerging languages and architectures enable faster and more scaleable computation.  
+\item Computer scientists must understand how emerging languages and architectures enable faster and more scalable computation.  
 
-\item Computational mathematicians must understand how to describe and analyze the errors in numerical algorithms and statistical models.
+\item Computational mathematicians must be able to describe and analyze truncation and round-off errors in numerical algorithms and measurement and misspecification errors of statistical models.  They must know how to choose the most efficient algorithms for different kinds of problems.
 
-{\color{green}[DM: Is there anything beyond error? Perhaps develop more efficient algorithms for different classes of applications?]}
-
-\item Computational biologists, chemists, and physicists must grasp the important scientific ideas that need to be captured by computations.  
-
-{\color{green}[DM: Perhaps ``Must understand the benefits and limitations of using computer modeling in their respective disciplines''. Also, do we want to mention engineers?]}
+\item Computational biologists, chemists, and physicists must grasp the important scientific ideas that need to be captured by computations.  They must understand the benefits and limitations of using computer modeling in their respective disciplines.
 
 \end{itemize}
-Good computational scientists must help grow their own disciplines.  However, at the same time, they must be conversant in these other disciplines so that they can be effective members of  interdisciplinary teams tackling large, complex computational science problems.
+But this is not enough!  To be effective members of interdisciplinary teams tackling large, complex computational science problems, computational scientists must be exit their silos and become conversant in other disciplines.
 
-{\color{green}[DM: Is this an imperative? As a counterexample, a computational chemist can use existing software tools to make testable hypotheses related to chemistry without interacting with mathematicians or computer scientists. Perhaps it would be more accurate to reverse the logic of the sentence to say ``To be effective members of interdisciplinary teams tackling large, complex computational science problems, computational scientists must be conversant in other disciplines.'']}
-
-\subsubsection*{Ignorance of Good Practice for Large Scale Computation.}  Solving large, complex computational problems using advanced CI deviates in important ways from what students learn in their coursework. 
+\subsubsection*{Ignorance of Good Practice for Large Scale Computation.}  Solving large, complex computational problems using advanced CI deviates in important ways from what students typically learn in their coursework. 
 
 \begin{itemize}
 
@@ -67,13 +59,13 @@ Good computational scientists must help grow their own disciplines.  However, at
 
 \item The software required to solve large problems is often drawn from multiple sources, written in several languages, and developed over the course of years.
 
-\item Software users must ensure that their results can be reproduced by others who come after them \cite{Pen11}.  
+\item Those who perform computational experiments to solve scientific problems or demonstrate the performance of their new algorithms must ensure that their results can be reproduced by others who come after them \cite{Pen11}.  
 
-\item Software contributors must ensure that their software is robust, can interact well with other software, and can be extended by those who come afterwards.  See \cite{BSS18} for a recent effort to promote these principles broadly.
+\item Software contributors must ensure that their software is robust, interacts well with other software, and can be extended by those who come afterwards.  See \cite{BSS18} for a recent effort to promote these principles broadly.
 
 \end{itemize}
 
-This proposal describes how we will overcome these challenges in educating the next generation of computational scientists.
+We propose to to overcome these challenges in educating the next generation of computational scientists.
 
 \subsection{Why CISC Is Particularly Poised to Lead This}
 CISC was created in May 2017 to leverage Illinois Tech’s existing strengths in computational science for greater impact.  CISC has been given office space, a modest budget, a 256-core cluster, and the good will of supporters among faculty and administrators.  Since its inception, CISC has initiated a series of lunchtime matchmaking seminars, brought its cluster online, hosted special lectures, and sponsored a seed grant competition. Fred J. Hickernell (FJH), PI and CISC’s director, is one of several computational mathematicians at Illinois Tech and previously served for twelve years as chair of the applied (and only) mathematics department.  Our computer science department has a historically strong group in high performance computing led by Xian-He Sun (XHS), a co-PI.  In recent years the biology, chemistry, and physics departments have hired computational scientists, including co-PIs David Minh (DM) (chemistry, CISC's assodiate director) and Jeff Wereszczynski (JW) (physics).  Co-PI Sou-Cheng Choi is a lead researcher at Allstate and a research associate professor in applied mathematics.
@@ -115,9 +107,11 @@ One of the primary outcomes of this project related to the present proposal is t
 
 \subsection{Experience of DM}
 
-DM is a new investigator and has not previously received NSF funding.
+DM is a new investigator and has not previously received NSF funding. 
 
 \DMNote{Fred, should I still say something about my research (unfunded and NIH funded) and broader impacts?}
+
+\FJHNote{David, yes, please say something.}
 
 \subsection{Experience of JW}
 
@@ -126,23 +120,40 @@ DM is a new investigator and has not previously received NSF funding.
 \section{Intellectual Merit}
 
 \subsection{Skills to Be Learned}
-Our primary emphasis is educating CI contributors (CIC), with a secondary emphasis on educating CI users (CIU).  Our goal is to train students from high school through PhD level in skills of increasing difficulty.  These include the following
+Our primary emphasis is educating CI contributors (CICs), with a secondary emphasis on educating CI users (CIUs).  Our goal is to train students from high school through PhD level in skills of increasing difficulty.  These include the following.
 
-\begin{description}
-\item[CIU] Write and run numerical programs on a single CPU \DMNote{Isn't this CIC?}
-\item[CIU] Write and run numerical programs that take advantage of multiple cores and/or a GPU on a single machine \DMNote{Isn't this CIC?}
-\item[CIU/CIC] Write and run multiple jobs simultaneously to a cluster
-\item[CIU/CIC] Write and run jobs on a cluster that each require multiple cores with tight connectivity
-\item[CIU/CIC] Write and run jobs on an advanced machine 
-\item[CIC] Use and write tools for analysis and visualization of large scale simulations
-\item[CIC] Develop a well-documented numerical software library consisting of tested routines
-\item[CIC] Develop or contribute to a numerical software library takes advantage of high performance computing architectures
-\item[CIC] Analyze the computational efficiency of algorithms and identify performance bottlenecks
-\item[CIU/CIC] Translate scientific models into mathematical formulations and then into computer code
-\item[CIC] Evaluate whether simulation output accurately reflects the natural phenomenon it is designed to emulate.  
+\begin{longtable}
+{p{0.8\textwidth}cc}
+Skill & CIU & CIC \\
+\toprule
+Write and run numerical programs on a single CPU &
+HS & HS \tabularnewline
+Write and run numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
+UG & HS\tabularnewline
+Run multiple jobs simultaneously to a cluster &
+UG & HS \tabularnewline
+Run jobs on a cluster that each require multiple cores with tight connectivity &
+G & UG \tabularnewline
+Run jobs on a top-500 machine &
+G & UG \tabularnewline
+Use tools for analysis and visualization of large scale simulations &
+G & G \tabularnewline
+Contribute to a well-documented numerical software library consisting of tested routines &
+UG & UG \tabularnewline
+Contribute to a numerical software library takes advantage of high performance computing architectures &
+ & G \tabularnewline
+Analyze the computational efficiency of individual algorithms and identify performance bottlenecks &
+& UG \tabularnewline
+Analyze the computational efficiency of large scale simulations and identify performance bottlenecks &
+& G \tabularnewline
+Evaluate whether simulation output accurately reflects the natural phenomenon it is designed to emulate &
+UG & UG \tabularnewline
+\bottomrule
+\end{longtable} 
 
+What we mean by this table is that a future CIC should ideally develop in high school all of the skills labeled HS, during undergraduate studies  all of the skills labeled UG, and during graduate studies all the skills labeled G.  The analogous interpretation applies to CIUs.  Our proposed innovations will provide opportunities to a future CICs and CIUs to develop these skills.  
 
-\end{description}
+We recognize that the depth of any one of these skills may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, we recognize that some students that we serve may not have had the ideal preparation and will require 
 
 
 
@@ -176,7 +187,15 @@ We propose to broaden this camp to include computing on the CISC cluster to intr
 \subsubsection*{Residencies for graduate students in other research groups}
 \subsubsection*{Sharing of coursework across majors}
 \subsubsection*{Summer internships} 
-\subsubsection*{Research experiences for under-served undergraduate students} \FJHNote{Jeff please write this}
+\subsubsection*{Research experiences for under-served undergraduate students} 
+Community colleges enroll approximately 45\% of the nation's undergraduate students, a disproportionate number of which are underrepresented minorities \cite{KnappKG12,nsfreport13}.  Nearly 90\% of these students have a goal of transferring to four-year institutions to complete their bachelor's degree, however the actual transfer rate is estimated to be only 25-40\% \cite{HoachlanderSH03,MelguizoKA11}.  Studies have shown that involving students, especially those from underrepresented groups, in  research activities decreases  their attrition rate and increases the probability they will pursue further education \cite{BarlowV04,JonesBV10}.
+
+To  encourage the pursuit of bachelor's and advanced degrees by community college students, we have partnered with the College of DuPage (COD) to recruit students from their associate degree programs  to engage in ten-week summer internship programs in CISC associated research group at IIT. Each year we will work with Prof.~Tom Carter of the physics department to advertise and recruit students to this program,  with a particular focus on underrepresented minorities.  These students will be matched with CISC labs based on their research interests and career goals.  In the first phase of their internships, the cohort of COD students will spend a week in an intensive computing ``crash course'' that will include topics such as an introduction to linux, programming in python, and the use of high performance computing resources.  For the remaining nine weeks, CoD students will work directly in IIT labs on various computational projects, such as \JWNote{help me list a few}, and simulations of biomolecular complexes in the Wereszczynski group.  To foster discussions among the CoD students, weekly lunches will be organized.  In addition, at the end of the summer a research symposium will be organized in which students will present a short presentation on their work.  Following the summer period, we will track the career trajectories of these students with annual follow up surveys, and we will maintain mentoring relationship with these students as are appropriate. 
+
+\JWNote{Here's an initial draft.  Let me know if more details are needed, I'm not sure how much space we'll have for this.}
+
+
+\FJHNote{Jeff please write this}
 \subsubsection*{Summer camps for high school students}
 
 
