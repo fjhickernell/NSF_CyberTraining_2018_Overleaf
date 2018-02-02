@@ -125,33 +125,33 @@ DM is a new investigator and has not previously received NSF funding.
 Our primary emphasis is educating CI contributors (CICs), with a secondary emphasis on educating CI users (CIUs).  Our goal is to train students from high school through PhD level in skills of increasing difficulty.  These include the following.
 
 \begin{longtable}
-{r>{\raggedright}p{0.8\textwidth}cc}
-\multicolumn{2}{l}{Skill} & CIU & CIC \\
+{r>{\raggedright}p{0.65\textwidth}ccc}
+\multicolumn{2}{l}{Skill} & CIU & CIC & Learned\\
 \toprule
 \skillnum{OneCPU} & Write and run numerical programs on a single CPU &
-HS & HS \tabularnewline
+HS & HS & \ref{Camp}, \ref{CurrExist} \tabularnewline
 \skillnum{TwoCPU} & Write and run numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
-UG & HS\tabularnewline
+UG & HS & \ref{Camp}\tabularnewline
 \skillnum{MultiJobs} & Run multiple jobs simultaneously on a cluster &
-UG & HS \tabularnewline
-\skillnum{Tight} & Run jobs on a cluster that each require multiple cores with tight connectivity &
+UG & HS & \ref{Camp} \tabularnewline
+\skillnum{Tight} & Run jobs that require multiple processors with tight connectivity &
 G & UG \tabularnewline
 \skillnum{TopMach} & Run jobs on a top-500 machine &
 G & UG \tabularnewline
 \skillnum{AnalVis} & Use tools for analysis and visualization of large scale simulations &
 G & G \tabularnewline
 \skillnum{MultiLing} & Solve scientific problems that require multiple libraries and languages & G & UG \tabularnewline
-\skillnum{Repro} & Execute reproducible scientific computations & UG & UG \tabularnewline
+\skillnum{Repro} & Execute reproducible scientific computations & UG & UG & \ref{RelSoft} \tabularnewline
 \skillnum{ContLib} & Contribute to a well-documented numerical software library consisting of documented, tested, robust routines &
-UG & UG \tabularnewline
+UG & UG & \ref{RelSoft} \tabularnewline
 \skillnum{HighLib} & Contribute to a numerical software library takes advantage of high performance computing architectures &
  & G \tabularnewline
 \skillnum{EffOne} & Analyze the computational efficiency of individual algorithms and identify performance bottlenecks &
-& UG \tabularnewline
+& UG & \ref{CurrExist} \tabularnewline
 \skillnum{EffLarge} & Analyze the computational efficiency of large scale simulations and identify performance bottlenecks &
 & G \tabularnewline
 \skillnum{Natural} & Evaluate whether simulation output accurately reflects the natural phenomenon it is designed to emulate &
-UG & UG \tabularnewline
+UG & UG & \ref{CurrExist} \tabularnewline
 & \FJHNote{What are we missing?  Please add} \tabularnewline
 \bottomrule
 \end{longtable} 
@@ -161,10 +161,10 @@ What we mean by this table is that a future CIC should ideally develop in high s
 The depth of any one of these skills may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, our students have multiple entry and exit points in our program.  Some students that we serve may not have had the ideal preparation in their earlier studies and will require help to catch up.
 
 
-\subsection{Program Innovations}
+%\subsection{Program Innovations}
 Our innovations will better prepare CICs and CIUs via several modes of learning for different kinds of students.
 
-\subsubsection*{Summer camp for high school students} For the past several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.  Dr.\ Kiah Wah Ong is the instructor.
+\subsection{Summer camp for high school students} \label{Camp} For the past several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.  Dr.\ Kiah Wah Ong is the instructor.
 
 We will broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing (Skills \ref{OneCPU}--\ref{MultiJobs}).  Mathematica has the capability to perform computations in parallel, and we will also investigate the use of other languages.  This summer camp will encourage the students to pursue degrees involving high performance computation and better prepare them for potential careers as computational scientists.  We also hope to attract the students to Illinois Tech's computational science offerings.  
 
@@ -172,13 +172,14 @@ Because our students are expected to have diverse backgrounds in computing, we w
 
 Our goal is to host 20 high school students in the summer of 2019 and increase the number each year to 40 high school students steady state in the summer of 2021.  The summer camp is funded by tuition fees.  In order to broader access, we plan to offer tuition scholarships to those with financial need.  Due to the planned expansion, some grant funding may be required to support the tuition expenses in the short term.
 
-\subsubsection*{Strengthened undergraduate and graduate level computational science coursework} Illinois Tech has several computational courses in our various science majors.  Computer science offers high performance computing at the undergraduate and graduate levels.  Applied mathematics BS through PhD students must all take at least one computational mathematics course and may also choose from a handful of computational mathematics electives. There are two undergraduate computational physics courses, a computational chemistry course, and a computational biology course.
+\subsection{Strengthening undergraduate and graduate level computational science coursework} \label{Curr} 
+\subsubsection{Making existing offerings more accessible} \label{CurrExist} Illinois Tech has several computational courses in our various science majors.  Computer science offers high performance computing at the undergraduate and graduate levels.  Applied mathematics BS through PhD students must all take at least one computational mathematics course and may also choose from a handful of computational mathematics electives. There are two undergraduate computational physics courses, a computational chemistry course, and a computational biology course.
 
-The (co-)PIs, who teach some of these courses, will liase  with other course instructors and the hosting departments to encourage non-majors to take these courses.  This includes publicizing the relevant courses and exploring lowering the pre-requisite barriers.
+These courses teach Skills \ref{OneCPU}, \ref{EffOne}, and \ref{Natural}.  The (co-)PIs, who teach some of these courses, will liase  with other course instructors and the hosting departments to encourage non-majors to take these courses.  This includes publicizing the relevant courses and exploring lowering the pre-requisite barriers.
 
-Existing courses computational courses in applied mathematics and the natural sciences lack significant attention to high performance computing.  They also lack attention to the ingredients of robust, documented, software that produces reproducible results.  We plan to address these deficiencies by creating new courses that are accessible to computational scientists and engineers in all majors.
+Existing courses computational courses in applied mathematics and the natural sciences lack significant attention to high performance computing.  They also lack attention to the ingredients of robust, documented, software that produces reproducible results.  We plan to address these deficiencies by creating new courses and expanding existing courses that will be accessible to computational scientists and engineers in all majors.
 
-In the Fall 2013 Choi and Hickernell piloted a one-credit course on Reliable Mathematical Software, primarily for their own graduate students.  The course covered truncation and round-off errors,
+\subsubsection{Professional Practices for Numerical Software} \label{RelSoft} In the Fall 2013 Choi and Hickernell piloted a one-credit course on Reliable Mathematical Software, primarily for their own graduate students.  The course covered truncation and round-off errors,
 stopping criteria for adaptive software,
 creating software collaboratively via Git, 
 documentation,
@@ -186,7 +187,9 @@ input parsing and validation, and
 reproducible computation.
 Students completed a project consisting of a small software library or an extension to an existing library.  Because of Hickernell's administrative duties as department chair, we did not have time to follow through on this experiment.  
 
-In this project we will grow this to a standard three-credit course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add \FJHNote{Still working on this and the next part}
+In this project we will grow this to a standard three-credit undergraduate/graduate elective course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add material on working in a multi-lingual environment (Skill \ref{MultiLing}) and parallel computation (Skills \ref{TwoCPU} and \ref{MultiJobs}).  The prerequisite will be any undergraduate course that covers numerical computation.
+
+The computer science department has offered a graduate course, Advanced Scientific Computation, which covers Skills \ref{Tight}, \ref{AnalVis}, \ref{MultiLing}, \ref{HighLib}, and \ref{EffLarge}.  Students excelling in this course have b
 
 CS451 Introduction to Parallel and Distributed Computing (see https://science.iit.edu/courses/cs451 )
 
@@ -216,6 +219,8 @@ To  encourage the pursuit of bachelor's and advanced degrees by community colleg
 Software is important \cite{RudEtal18a}
 
 \section{Broader Impacts}
+
+\subsection{Recruitment}
 \section{Evaluation}
 
 
