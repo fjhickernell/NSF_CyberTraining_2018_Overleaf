@@ -1,5 +1,7 @@
 \documentclass[11pt]{NSFamsart}
 \input{CyberTrainingMacros.tex}
+\newcounter{skillct}
+\newcommand{\skillnum}[1]{\refstepcounter{skillct}\label{#1}\arabic{skillct}.}
 
 
 \begin{document}
@@ -68,14 +70,14 @@ But this is not enough!  To be effective members of interdisciplinary teams tack
 We propose to to overcome these challenges in educating the next generation of computational scientists.
 
 \subsection{Why CISC Is Particularly Poised to Lead This}
-CISC was created in May 2017 to leverage Illinois Tech’s existing strengths in computational science for greater impact.  CISC has been given office space, a modest budget, a 256-core cluster, and the good will of supporters among faculty and administrators.  Since its inception, CISC has initiated a series of lunchtime matchmaking seminars, brought its cluster online, hosted special lectures, and sponsored a seed grant competition. Fred J. Hickernell (FJH), PI and CISC’s director, is one of several computational mathematicians at Illinois Tech and previously served for twelve years as chair of the applied (and only) mathematics department.  Our computer science department has a historically strong group in high performance computing led by Xian-He Sun (XHS), a co-PI.  In recent years the biology, chemistry, and physics departments have hired computational scientists, including co-PIs David Minh (DM) (chemistry, CISC's assodiate director) and Jeff Wereszczynski (JW) (physics).  Co-PI Sou-Cheng Choi is a lead researcher at Allstate and a research associate professor in applied mathematics.
+CISC was created in May 2017 to leverage Illinois Tech’s existing strengths in computational science for greater impact.  CISC has been given office space, a modest budget, a 256-core cluster, and the good will of supporters among faculty and administrators.  Since its inception, CISC has initiated a series of lunchtime matchmaking seminars, brought its cluster online, hosted special lectures, and sponsored a seed grant competition. Fred J. Hickernell, PI and CISC’s director, is one of several computational mathematicians at Illinois Tech and previously served for twelve years as chair of the applied (and only) mathematics department.  Our computer science department has a historically strong group in high performance computing led by Xian-He Sun (XHS), a co-PI.  In recent years the biology, chemistry, and physics departments have hired computational scientists, including co-PIs David Minh (DM) (chemistry, CISC's assodiate director) and Jeff Wereszczynski (JW) (physics).  Co-PI Sou-Cheng Choi is a lead researcher at Allstate and a research associate professor in applied mathematics.
 
 The (co-)PIs have experience developing curricula, mentoring high school students through PhD students, and partnering with College of DuPage, Argonne National Laboratory, and Fermilab.  Our proposed innovations will build upon our track record to build a strong multi-faceted training program for computational scientists.
 
 \section{Results from Prior NSF Support} \FJHNote{Everyone needs to fill out their previous experience, need subsections on intellectual merit and broader impacts}
-\subsection{Experience of FJH and SCC}
+\subsection{Experience of Hickernell and Choi}
 NSF-DMS-1522687\except{toc}{, \emph{Stable, Efficient, Adaptive Algorithms for Approximation and 
-Integration}, \$270,000, August 2015 -- July 2018.} \label{SectFJHPrevious}  FJH is PI and SCC is senior personnel.  
+Integration}, \$270,000, August 2015 -- July 2018.} \label{SectHickernellPrevious}  Hickernell is PI and SCC is senior personnel.  
 
 \subsubsection{Intellectual Merit}
 One of the primary outcomes of this project related to the present proposal is the development of the Guaranteed Automatic Integration Library (GAIL) \cite{ChoEtal17b}.  This library comprises univariate and multivariate integration, univariate function approximation, and univariate optimization algorithms that automatically determine the sample size required to meet user-defined error tolerances.  The library does not rely on interval arithmetic, as is done in INTLAB \cite{MoKeCl09, Rum99a, Rum10a}, but like INTLAB, GAIL comes with theoretical guarantees that common adaptive algorithms lack. The recent GAIL developments include locally adaptive function approximation and optimization \cite{ChoEtal17a, Din15a}, adaptive quasi-Monte Carlo cubature \cite{HicJim16a, JimHic16a}, and the ability to set a hybrid error tolerance involving both absolute and relative error criteria \cite{HicEtal17a}.  Other Articles, theses,  software, and preprints supported in part by this grant include 
@@ -96,16 +98,16 @@ One of the primary outcomes of this project related to the present proposal is t
 	Zho15a,
 	ZhoHic15a}.
     
-\subsubsection{Broader Impacts}  Three students (two female) have completed their PhD degrees, and three PhD students are in the midst of their PhD degrees.  One PhD graduate spent time working at Fermilab as a student helping them implement modern Monte Carlo methods.  Another PhD student is picking up where the first one left off.  Two students (one female) completed their MS theses, and one female student has nearly completed her MS thesis. More than a dozen undergraduate students have been mentored (primarily during the summer),  over the course of three summers.  FJH has embedded the new adaptive (quasi-)Monte Carlo research in his yearly graduate Monte Carlo class, and some students in that class have contributed to GAIL.  FJH and SCC and their students have written an encyclopedia article, given numerous conference and colloquium talks, and organized a conference and special conference sessions at multiple conferences.  FJH has given an invited conference tutorial and is one of the program leaders for this year's SAMSI program on quasi-Monte Carlo sampling.  FJH received the 2016 Joseph F.\ Traub Prize for Achievement in Information-Based Complexity.
+\subsubsection{Broader Impacts}  Three students (two female) have completed their PhD degrees, and three PhD students are in the midst of their PhD degrees.  One PhD graduate spent time working at Fermilab as a student helping them implement modern Monte Carlo methods.  Another PhD student is picking up where the first one left off.  Two students (one female) completed their MS theses, and one female student has nearly completed her MS thesis. More than a dozen undergraduate students have been mentored (primarily during the summer),  over the course of three summers.  Hickernell has embedded the new adaptive (quasi-)Monte Carlo research in his yearly graduate Monte Carlo class, and some students in that class have contributed to GAIL.  Hickernell and SCC and their students have written an encyclopedia article, given numerous conference and colloquium talks, and organized a conference and special conference sessions at multiple conferences.  Hickernell has given an invited conference tutorial and is one of the program leaders for this year's SAMSI program on quasi-Monte Carlo sampling. Hickernell received the 2016 Joseph F.\ Traub Prize for Achievement in Information-Based Complexity.
 
 
 
 
 
 
-\subsection{Experience of XHS}
+\subsection{Experience of Sun}
 
-\subsection{Experience of DM}
+\subsection{Experience of Minh}
 
 DM is a new investigator and has not previously received NSF funding. 
 
@@ -113,7 +115,7 @@ DM is a new investigator and has not previously received NSF funding.
 
 \FJHNote{David, yes, please say something.}
 
-\subsection{Experience of JW}
+\subsection{Experience of Wereszczynski}
 
 
 
@@ -123,69 +125,81 @@ DM is a new investigator and has not previously received NSF funding.
 Our primary emphasis is educating CI contributors (CICs), with a secondary emphasis on educating CI users (CIUs).  Our goal is to train students from high school through PhD level in skills of increasing difficulty.  These include the following.
 
 \begin{longtable}
-{p{0.8\textwidth}cc}
-Skill & CIU & CIC \\
+{r>{\raggedright}p{0.8\textwidth}cc}
+\multicolumn{2}{l}{Skill} & CIU & CIC \\
 \toprule
-Write and run numerical programs on a single CPU &
+\skillnum{OneCPU} & Write and run numerical programs on a single CPU &
 HS & HS \tabularnewline
-Write and run numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
+\skillnum{TwoCPU} & Write and run numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
 UG & HS\tabularnewline
-Run multiple jobs simultaneously to a cluster &
+\skillnum{MultiJobs} & Run multiple jobs simultaneously on a cluster &
 UG & HS \tabularnewline
-Run jobs on a cluster that each require multiple cores with tight connectivity &
+\skillnum{Tight} & Run jobs on a cluster that each require multiple cores with tight connectivity &
 G & UG \tabularnewline
-Run jobs on a top-500 machine &
+\skillnum{TopMach} & Run jobs on a top-500 machine &
 G & UG \tabularnewline
-Use tools for analysis and visualization of large scale simulations &
+\skillnum{AnalVis} & Use tools for analysis and visualization of large scale simulations &
 G & G \tabularnewline
-Contribute to a well-documented numerical software library consisting of tested routines &
+\skillnum{MultiLing} & Solve scientific problems that require multiple libraries and languages & G & UG \tabularnewline
+\skillnum{Repro} & Execute reproducible scientific computations & UG & UG \tabularnewline
+\skillnum{ContLib} & Contribute to a well-documented numerical software library consisting of documented, tested, robust routines &
 UG & UG \tabularnewline
-Contribute to a numerical software library takes advantage of high performance computing architectures &
+\skillnum{HighLib} & Contribute to a numerical software library takes advantage of high performance computing architectures &
  & G \tabularnewline
-Analyze the computational efficiency of individual algorithms and identify performance bottlenecks &
+\skillnum{EffOne} & Analyze the computational efficiency of individual algorithms and identify performance bottlenecks &
 & UG \tabularnewline
-Analyze the computational efficiency of large scale simulations and identify performance bottlenecks &
+\skillnum{EffLarge} & Analyze the computational efficiency of large scale simulations and identify performance bottlenecks &
 & G \tabularnewline
-Evaluate whether simulation output accurately reflects the natural phenomenon it is designed to emulate &
+\skillnum{Natural} & Evaluate whether simulation output accurately reflects the natural phenomenon it is designed to emulate &
 UG & UG \tabularnewline
+& \FJHNote{What are we missing?  Please add} \tabularnewline
 \bottomrule
 \end{longtable} 
 
-What we mean by this table is that a future CIC should ideally develop in high school all of the skills labeled HS, during undergraduate studies  all of the skills labeled UG, and during graduate studies all the skills labeled G.  The analogous interpretation applies to CIUs.  Our proposed innovations will provide opportunities to a future CICs and CIUs to develop these skills.  
+What we mean by this table is that a future CIC should ideally develop in high school all of the skills labeled HS, during undergraduate studies  all of the skills labeled UG, and during graduate studies all the skills labeled G.  The analogous interpretation applies to CIUs.  Our proposed innovations, outlined in the next subsection, will provide opportunities to a future CICs and CIUs to develop these skills.  
 
-We recognize that the depth of any one of these skills may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, we recognize that some students that we serve may not have had the ideal preparation and will require 
-
-
+The depth of any one of these skills may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, our students have multiple entry and exit points in our program.  Some students that we serve may not have had the ideal preparation in their earlier studies and will require help to catch up.
 
 
+\subsection{Program Innovations}
+Our innovations will better prepare CICs and CIUs via several modes of learning for different kinds of students.
+
+\subsubsection*{Summer camp for high school students} For the past several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.  Dr.\ Kiah Wah Ong is the instructor.
+
+We will broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing (Skills \ref{OneCPU}--\ref{MultiJobs}).  Mathematica has the capability to perform computations in parallel, and we will also investigate the use of other languages.  This summer camp will encourage the students to pursue degrees involving high performance computation and better prepare them for potential careers as computational scientists.  We also hope to attract the students to Illinois Tech's computational science offerings.  
+
+Because our students are expected to have diverse backgrounds in computing, we will begin the camp by assessing their existing skills and the break them into groups so that those who need to learn more fundamental skills may do so, while those with more advanced knowledge can be given more challenging assignments.  Illinois Tech students will serve as teaching assistants (TAs) for the camp, which will provide them with the opportunity to reinforce their own learning by teaching the computational science that they have learned. 
+
+Our goal is to host 20 high school students in the summer of 2019 and increase the number each year to 40 high school students steady state in the summer of 2021.  The summer camp is funded by tuition fees.  In order to broader access, we plan to offer tuition scholarships to those with financial need.  Due to the planned expansion, some grant funding may be required to support the tuition expenses in the short term.
+
+\subsubsection*{Strengthened undergraduate and graduate level computational science coursework} Illinois Tech has several computational courses in our various science majors.  Computer science offers high performance computing at the undergraduate and graduate levels.  Applied mathematics BS through PhD students must all take at least one computational mathematics course and may also choose from a handful of computational mathematics electives. There are two undergraduate computational physics courses, a computational chemistry course, and a computational biology course.
+
+The (co-)PIs, who teach some of these courses, will liase  with other course instructors and the hosting departments to encourage non-majors to take these courses.  This includes publicizing the relevant courses and exploring lowering the pre-requisite barriers.
+
+Existing courses computational courses in applied mathematics and the natural sciences lack significant attention to high performance computing.  They also lack attention to the ingredients of robust, documented, software that produces reproducible results.  We plan to address these deficiencies by creating new courses that are accessible to computational scientists and engineers in all majors.
+
+In the Fall 2013 Choi and Hickernell piloted a one-credit course on Reliable Mathematical Software, primarily for their own graduate students.  The course covered truncation and round-off errors,
+stopping criteria for adaptive software,
+creating software collaboratively via Git, 
+documentation,
+input parsing and validation, and
+reproducible computation.
+Students completed a project consisting of a small software library or an extension to an existing library.  Because of Hickernell's administrative duties as department chair, we did not have time to follow through on this experiment.  
+
+In this project we will grow this to a standard three-credit course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add \FJHNote{Still working on this and the next part}
+
+CS451 Introduction to Parallel and Distributed Computing (see https://science.iit.edu/courses/cs451 )
+
+We continuously integrate research with education at IIT by introducing new developments in information processing into the classroom and by providing research opportunities for both undergraduate and graduate students. Our previous NSF CRI grant has supported the work of many undergraduate and graduate students. Our existing computing equipment thus not only provides necessary infrastructure for the PIs' research, it more generally promotes the computer science, more recently data science, at IIT and serves as the central node connecting researchers at IIT, Argonne, and Fermi Labs. However, this infrastructure is aging and no longer meets the ongoing research needs. New equipment is needed to maintain current progress and the momentum we have developed over more than a decade.  
+
+As an example of the educational impact such infrastructure can have, consider the courses PI Zhang has taught on advanced scientific computing since 2006, from which she recruited an interdisciplinary team consisting of undergraduate and graduate students in computer science, mathematics, physics, and engineering to participate in her research. She integrated her ongoing research work into course projects. Students were exposed to cutting-edge analytic and algorithmic DOE research projects, and gained hands-on large-scale numerical programming experience. Equipment from our previous NSF CRI was used by her students for their term projects. Several of these projects have been integrated into the software package PETSc [PETS13], benefiting the scientific community in large. In addition, these projects on the advanced computer system motivated and prepared students for their career advancement. For example, at least eight students from her courses received the ANL summer internships after taking her courses; three of them became post-doctoral researchers at ANL after receiving Ph.D. degrees. 
+
+One highly successful example is Michael McCourt, who took PI Zhang's course as a junior undergraduate in 2006. Encouraged and recommended by PI. Zhang and other IIT professors, he was awarded an NSF Graduate Research Fellowship for his Ph.D studies at Cornell University. In his last three years of graduate study, he worked on PI Zhang's research team at ANL as a lab student working on a fusion simulation project sponsored by the DOE. Now, he is an assistant professor in University of Colorado at Denver. Michael told PI Zhang that his early exposure to the parallel computation at IIT motivated him to take this academic and research journey.
+In addition to such research-oriented classes, the PIs will develop other new courses and introduce recent research achievements into existing classes. A paradigm for such effort is Dr. Argamon's previous NSF-funded project which developed new undergraduate courses on "Intelligent Text Processing" and "Information and Knowledge Management Systems" (IKMS), as well as a new undergraduate specialization in IKMS. Professional evaluation of these courses demonstrated significant knowledge gained by the students and their overall high satisfaction rate.  These and other courses will be enhanced with the availability of the proposed equipment. In particular, we expect our new undergraduate specialization in Data Science and new Master of Data Science programs to be significantly impacted by the proposed grant. The infrastructure will directly support the enhancement of existing courses with assignments and projects on large-scale data analytics, as well as enabling the development of new courses in the area.
 
 
-\subsection{Innovations}
-Our proposed innovations are targeted 
 
-
-\subsubsection*{Stronger high performance(?) science coursework across the science curriculum} At present Illinois Tech has  \FJHNote{list what we have already} 
-\begin{itemize} 
-
-\item \FJHNote{computer science offerings}
-
-\item A computational mathematics specialization within the BS Applied Mathematics, four undergraduate computational mathematics courses (one required), and five(?) graduate computational mathematical courses
-
-\end{itemize}
-
-However, 
-
-We wa
-\subsubsection*{New degrees or certificates???}
-
-\subsubsection*{Summer camps for high school students} For several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.
-
-We propose to broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing.  This will encourage them to pursue degrees involving high performance computation and better prepare them for careers as computational sciences.  We also hope to attract them to Illinois Tech's computational science offerings
-
-
-\subsubsection*{Post-doctoral scholars???} 
 \subsubsection*{Residencies for graduate students in other research groups}
-\subsubsection*{Sharing of coursework across majors}
 \subsubsection*{Summer internships} 
 \subsubsection*{Research experiences for under-served undergraduate students} 
 Community colleges enroll approximately 45\% of the nation's undergraduate students, a disproportionate number of which are underrepresented minorities \cite{KnappKG12,nsfreport13}.  Nearly 90\% of these students have a goal of transferring to four-year institutions to complete their bachelor's degree, however the actual transfer rate is estimated to be only 25-40\% \cite{HoachlanderSH03,MelguizoKA11}.  Studies have shown that involving students, especially those from underrepresented groups, in  research activities decreases  their attrition rate and increases the probability they will pursue further education \cite{BarlowV04,JonesBV10}.
@@ -216,7 +230,7 @@ Software is important \cite{RudEtal18a}
 \renewcommand{\refname}{{\Large\textbf{References Cited}}}                   %%
 \renewcommand{\bibliofont}{\normalsize}
 
-\bibliography{FJH23,FJHown23,GregPapers}}
+\bibliography{Hickernell23,Hickernellown23,GregPapers}}
 
 \end{document}
 
