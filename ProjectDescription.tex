@@ -255,24 +255,41 @@ The (co-)PIs have had collaborations and contacts with Chicago-area companies in
 
 Each year, starting in 2019, we will offer CISC fellowships to two undergraduates (\$5000 stipend each) and five graduate students (\$7000 stipend each).  The students will apply in the early part of the year, providing a synopsis of their proposed projects, their curriculum vitae, and letters of recommendation from their advisors and the project supervisors.  The management committee for this project---the (co-)PIs---will decide who will receive the fellowships.  
 
-By the time that this grant is completed, we expect that our overall training program for computational scientists will have prepared a significant number of our to compete for funded internship opportunities in the national laboratories.  Moreover, we anticipate that embedding  students in research groups outside their silos will spark cross-disciplinary collaborations among research groups.  This in turn will lead to external funding of cross-disciplinary computational projects that will draw together and financially support computational science students from diverse majors.  
-
-
+By the time that this grant is completed, we expect that our overall training program for computational scientists will have prepared a significant number of our to compete for funded internship opportunities in the national laboratories.  Moreover, we anticipate that embedding  students in research groups outside their silos will spark cross-disciplinary collaborations among research groups.  This in turn will lead to external funding of cross-disciplinary computational projects that will draw together and financially support computational science students from diverse majors.
 
 
 \section{Broader Impacts}
 
-\subsection{Educating the Next Computational Scientists}
+\subsection{Educating the Next Computational Scientists} 
+The standard science curricula has not kept pace with the potential of advanced CI for computational science.  Computer science courses teach the about the architectures and languages for large-scale computation, but they do not teach their students how to solve important scientific problems.  Computational mathematics, biology, chemistry, and physics courses do not educate their students in advanced CI.
 
-\subsection{Impacting Research in Computer Science, Computatonal Mathematics, and Computational Biology/Chemistry/Physics}
+The proposed computational science education program proposed here will set students on a path so that by the time they finish their graduate studies, they can be productive computational scientists working on interdisciplinary research teams discovering, predicting and optimizing new science.  Their work will lead to breakthroughs in our understanding the fundamental nature of matter, which will satisfy our curiosity.  Their work will lead to breakthroughs in health and medicine, and in manufacturing, which will improve the quality of our lives and the national economy. 
+
+\subsection{Impacting Research in Computer Science, Mathematical Science, and Natural Science}
+The interdisciplinary computational research which our proposed program encourages will feed interesting problems to the contributing disciplines:
+\begin{itemize}
+\item Complex quantitative models of natural science phenomena will challenge computational mathematicians and computer scientists to develop new algorithms requiring more advanced software and hardware to solve these models.  
+\item The advances in CI will alter how computational mathematicians and computer scientists design algorithms and how they measure algorithmic efficiency.  The simple measures suited to single processor systems do not apply to advanced CI, and the replacement measures need to be developed.  Given the variety of architectures and languages, clock time is not necessarily a good choice.
+\item Large-scale scientific computation enabled by advanced CI will answer existing questions in the natural sciences and prompt new research questions.  
+\end{itemize}
+The computational scientists that can answer these new problems will be those who are already proficient contributors and users of advanced CI, i.e., CICs and CIUs.  They must know there own discipline well enough to be able to contribute to answering solving these new problems.  But they must also be conversant in the other disciplines as well.
+
+As an example, consider the situation of quasi-Monte Carlo (qMC) methods (Hickernell's research area), which are used for the evaluation of multi-dimensional integrals. From their 1960s until the early 1990s the developments in qMC were mainly theoretical.  Then in the mid-1990s, Paskov and Traub \cite{PasTra95} showed that qMC could price a collateralized mortgage obligation much more efficiently than simple or independent and identically distributed Monte Carlo (IIDMC).  This was surprising, since existing theory supporting showed that qMC was better than IIDMC up to dimension five or so, but Paskov and Traub's problem had dimension 360.  This computational result challenged mathematicians and computer scientists to re-visit the long-held theory, and the result was dozens of articles and a more complete understanding of the situations in which qMC is superior to MC, even for infinite dimensional integration.  New computation raised new research questions, which then were answered.
+
+As another example, a couple of years ago, Jim\'enez Rugama, the former PhD student of Hickernell, was invited to join a research group of physicists at Fermilab to explore whether their Monte Carlo (MC) computations could be sped up.  The default MC algorithm being used was several decades old.  Jim\'enez Rugama was able to introduce the group to the much more efficient qMC methods.  In the course of implementing these methods, Jim\'enez Rugama discovered an anomaly in the calculations, which was traced to a bug in the long-standing physics code that generated the particle collision events.
 
 \subsection{Modeling How Silos Can be Broken}
+We recognize that computer science, mathematical science, and the several natural sciences are well-defined disciplines.  Someone existing only in one of these silos cannot take full advantage of advanced CI for scientific computation.  The solution is not build a new computational science silo.  The solution is to develop computational scientists that are deep in one discipline but break out of their own silo to be conversant in others.
+
+As an analogy, the United States is comprised of people from a mixture of cultures.  Our strength comes not from homogenizing the cultural differences but from drawing on the strengths of our diverse cultural heritage while understanding the cultures that are not our own.  Most of the (co-)PIs have benefited by learning a language and culture other than the one they were born into.
+
+This project will show other educational institutional how to break down the major discipline silos to foster high quality computational science.  The activities that we will implement will be models for others.  We will make our syllabi, training materials, and procedures available on repositories for others to follow and model.  We will publicize our successes and the lessons learned from failures in conference talks.  We will advise those interested to adopt our best practices.
 
 \subsection{Codifying Good Computational Science Practice}
+The practice of good computational science involves a number of 
 
 \subsection{Broadening Access to Computational Science Opportunities}
 
-\section{Recruitment}
 \section{Evaluation}
 
 
