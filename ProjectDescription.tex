@@ -2,13 +2,66 @@
 \input{CyberTrainingMacros.tex}
 \newcounter{skillct}
 \newcommand{\skillnum}[1]{\refstepcounter{skillct}\label{#1}\arabic{skillct}.}
+\newcommand{\notyet}{\textbf{?}}
+\newcommand{\done}{\checkmark}
+
 
 
 
 \begin{document}
 \leftmargini2.5ex %indentation of the left margin of the itemize
 
-[Draft Title:]  	CyberTraining: CIC:  Educating the Next Computational Scientists
+\centerline{\Large \textbf{To Do List}}
+\bigskip
+
+\begin{itemize}
+\item[\notyet] Confirm Title: CyberTraining: CIC:  Educating the Next Computational Scientists
+\item Project Description
+\begin{itemize}
+\item Previous funding
+\begin{itemize}
+\item[\done] Fred
+\item[\notyet] Xian-He
+\item[\notyet] David
+\item[\notyet] Jeff
+\item[\done] Sou-Cheng
+\item[\notyet] Norm
+\item[\notyet] Kiah Wah
+\end{itemize}
+\item[\notyet] References (Jeff)
+\item[\notyet] Graduate course in computational natural science (David, Jeff)
+\item[\notyet] Broader impacts
+\item[\notyet] Evaluation (Norm)
+\end{itemize}
+
+\item[\notyet] Budget
+
+\item NSF Biosketches
+\begin{itemize}
+\item[\notyet] Fred
+\item[\done] Sou-Cheng
+\item[\done] Xian-He
+\item[\notyet] David
+\end{itemize}
+
+\item Facilities
+\begin{itemize}
+\item[\notyet] Xian-He's lab
+\end{itemize}
+
+\item Letters of Collaboration
+\begin{itemize}
+\item[\notyet] Lois
+\item[\notyet] Burt
+\item[\notyet] COD
+\end{itemize}
+
+\item[\notyet] Data Management
+
+\item[\notyet] Management
+\end{itemize}
+
+\bigskip
 
 \noindent
 \XHSNote{A note from Xian-He}\\
@@ -18,12 +71,8 @@
 \NLNote{A note from Norm Lederman}\\
 \KWONote{A note from KiahWahOng}\\
 
-
-
-\bigskip
-
-
-\bigskip
+\newpage
+\setcounter{page}{1}
 
 \centerline{\Large \textbf{Project Description}}
 \vspace{-2ex}
@@ -249,7 +298,7 @@ The former opportunity moves our students outside their silos.  The broadening e
 
 CISC began a series of lunchtime matchmaking seminars in the fall of 2017 to introduce computational scientists and engineers at Illinois Tech to each others' research.  CISC also hosted a seed grant competition and awarded one grant to a multidisciplinary team.  The goal of these ongoing activities is to promote more competitive proposals for external funding of interdisciplinary computational science research.  This goal will be aided by the introduction of CISC fellows, while at the same time our other efforts to raise the awareness of computational science research at Illinois Tech should promote quality applications for the CISC Fellowships.
 
-The ongoing large-scale computational projects at Argonne and Fermilab will provide students the opportunity to learn and practice Skills \ref{TopMach}, \ref{AnalVis}, \ref{MultiLing}, \ref{Decision}, and \ref{Model}.  Argonne has several software development projects including PETSc \cite{petsc-web-page17} and xSDK \cite{XSDK17a}. Fermilab has a heterogeneous computing environment for high energy physics (HEPCloud) \cite{HEP18a} under continuous development.  Two of our external advisory board members, Lois Curfmann McInnes (Argonne) and Burt Holzman (Fermilab) will aid us in placing CISC Fellows in these two national labs.
+The ongoing large-scale computational projects at Argonne and Fermilab will provide students the opportunity to learn and practice Skills \ref{TopMach}, \ref{AnalVis}, \ref{MultiLing}, \ref{Decision}, and \ref{Model}.  Argonne has several software development projects including PETSc \cite{petsc-web-page17} and xSDK \cite{XSDK17a}. Fermilab has a heterogeneous computing environment for high energy physics (HEPCloud) \cite{HEP18a} under continuous development.  Two of our external advisory board members, Lois Curfman McInnes (Argonne) and Burt Holzman (Fermilab) will aid us in placing CISC Fellows in these two national labs.
 
 The (co-)PIs have had collaborations and contacts with Chicago-area companies involved in supporting or performing large-scale calculations as part of the research.  We will further develop these contacts and identify sources of possible fellowships.
 
@@ -286,15 +335,20 @@ As an analogy, the United States is comprised of people from a mixture of cultur
 This project will show other educational institutional how to break down the major discipline silos to foster high quality computational science.  The activities that we will implement will be models for others.  We will make our syllabi, training materials, and procedures available on repositories for others to follow and model.  We will publicize our successes and the lessons learned from failures in conference talks.  We will advise those interested to adopt our best practices.
 
 \subsection{Codifying Good Computational Science Practice}
-The practice of good computational science involves a number of 
+The practice of good computational science is built upon diverse ideas that are not necessarily contained in one text or reference book.  Some texts on computational science, such as \cite{TveEtal10a}, focus on numerical methods, while others focus, such as \cite{Thi13a}, focus on on scientific applications.  Neither of these types of texts give significant attention to parallel computing or software engineering for high performance computational science software libraries. Texts on high performance computing for computational scientists, such as \cite{MagEtal16a}, are incomplete in their coverage of numerical methods.
+
+As we develop the new course described in Sect. \ref{RelSoft} and as we work with the CISC fellows, we will gather digestible resources describing good computational science practice
 
 \subsection{Broadening Access to Computational Science Opportunities}
 
 \section{Evaluation}
 
 
-\newpage
+
 \clearpage
+\newpage
+
+
 %\pagenumbering{arabic}
 \setcounter{page}{1}
 
