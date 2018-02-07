@@ -22,7 +22,7 @@
 \begin{itemize}
 \item[\done] Fred
 \item[\notyet] Xian-He
-\item[\notyet] David
+\item[\done] David
 \item[\done] Jeff
 \item[\done] Sou-Cheng
 \item[\notyet] Norm
@@ -41,7 +41,7 @@
 \item[\notyet] Fred
 \item[\done] Sou-Cheng
 \item[\done] Xian-He
-\item[\notyet] David
+\item[\done] David
 \item[\notyet] Jeff
 \item[\notyet] Norm
 \item[\notyet] Kiah Wah
@@ -53,7 +53,7 @@
 \item[\notyet] Fred
 \item[\notyet] Sou-Cheng \SCCNote{Sent to Brian Davis  at \texttt{jdavis10@iit.edu} on Feb 1, 2018. A copy, \texttt{20180128\_Sou\_Cheng\_Choi\_COA.xlsx}, is uploaded to Overleaf's project folder \texttt{Biosketch}.}
 \item[\notyet] Xian-He
-\item[\notyet] David
+\item[\done] David
 \item[\notyet] Norm
 \item[\notyet] Kiah Wah
 \end{itemize}
@@ -105,7 +105,7 @@ Computational sciences typically draw upon the knowledge and strengths of severa
 \item experience with advanced cyberinfrastructure (CI), including the practices that extend beyond what is required for computations on a single processor or a core  in a multi-core CPU (central processing unit).
 \end{itemize}
 
-The newly established Center for Interdisciplinary Scientific Computation (CISC) \url{http://cos.iit.edu/cisc} at Illinois Institute of Technology (IIT, or Illinois Tech) will lead the development of a new program to educate computational scientists that have the two attributes above.  We will educate high school through doctoral students.  Learning will be curricular and extra-curricular.  We will partner with nearby national laboratories, companies engaged in advanced computing, and schools whose students have less access to research experience and high-end computing facilities.
+The newly established Center for Interdisciplinary Scientific Computation (CISC) \url{http://cos.iit.edu/cisc} at Illinois Institute of Technology (IIT, or Illinois Tech) will lead the development of a new program \DMNote{a program or a few programs? ``development of new programs''?} to educate computational scientists that have the two attributes above.  We will educate high school through doctoral students.  Learning will be curricular and extra-curricular.  We will partner with nearby national laboratories, companies engaged in advanced computing, and schools whose students have less access to research experience and high-end computing facilities.
 
 \subsection*{The Challenges}
 Computing solutions to complex scientific problems requires properly educated computational scientists.  This proper education must overcome two kinds of challenges.
@@ -178,16 +178,15 @@ One of the primary outcomes of this project in relation to the present proposal 
 
 DM is a new investigator and has not previously received NSF funding.  
 
-\DMNote{Fred, should I still say something about my research (unfunded and NIH funded) and broader impacts?}
+% \DMNote{Fred, should I still say something about my research (unfunded and NIH funded) and broader impacts?}
 
-\FJHNote{David, yes, please say something.}
+% \FJHNote{David, yes, please say something.}
 
 \subsection{Experience of Wereszczynski}
 
 %\JWNote{I have two NSF grants to report on.  Note sure how you want to arrange them}
 
 PI of NSF-MCB-1552743   ``CAREER: The Effects of Post-translational Modifications and Histone Variants on Chromatin Fiber Dynamics'' June 2016 -- May 2021, \$790,129.
-
 
 \subsubsection{Intellectual Merit} The aim of this CAREER award is to use and develop multiscale biophysical simulation techniques to study how DNA is compacted in the cell, and how these mechanisms are regulated to affect gene expression.  The PI's group addresses these issues through the use of molecular dynamics (MD) simulations, along with collaborations at Argonne National Laboratory and the University of Iowa.  Early results have been presented at the annual Biophysical Society Meeting in 2017 and 2018, and a manuscript detailing the mechanisms by which post-translational modifications to the ``H3 tails'' affect the structures and energetics of nucleosomes is under minor review at \textit{eLife.} \SCCNote{Add a citation?}
 
@@ -207,14 +206,15 @@ Our primary emphasis is educating CI contributors (CICs), and our secondary emph
 
 \begin{longtable}
 {r>{\raggedright}p{0.62\textwidth}ccc}
-\multicolumn{2}{l}{Learning Outcomes} & CIU & CIC & Learned\\
+\multicolumn{2}{l}{\textbf{Learning Outcomes}} & \textbf{CIU} & \textbf{CIC} & \textbf{Learned}\\
 \toprule
+\multicolumn{2}{l}{\emph{Use}} \tabularnewline
 \skillnum{OneCPU} & Write and run numerical programs on a single CPU &
 HS & HS & \ref{Camp}, \ref{CurrExist}, \ref{CODSummer} \tabularnewline
-\skillnum{TwoCPU} & Write and run numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
+\skillnum{TwoCPU} & Run numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
 UG & HS & \ref{Camp}\tabularnewline
-\skillnum{MultiJobs} & Run multiple jobs simultaneously on a cluster &
-UG & HS & \ref{Camp} \tabularnewline
+%\skillnum{MultiJobs} & Run multiple jobs simultaneously on a cluster &
+% UG & HS & \ref{Camp} \tabularnewline
 \skillnum{Tight} & Run jobs that require multiple processors with tight connectivity &
 G & UG & \ref{Fellow} \tabularnewline
 \skillnum{TopMach} & Run jobs on a top-500 machine &
@@ -223,14 +223,21 @@ G & UG & \ref{Fellow} \tabularnewline
 G & G & \ref{LargeSC}, \ref{Fellow} \tabularnewline
 \skillnum{MultiLing} & Solve scientific problems that require multiple libraries and languages & G & UG & \ref{Fellow} \tabularnewline
 \skillnum{Repro} & Execute reproducible scientific computations & UG & UG & \ref{RelSoft} \tabularnewline
-\skillnum{ContLib} & Contribute to a well-documented numerical software library consisting of documented, tested, robust routines &
-UG & UG & \ref{RelSoft} \tabularnewline
-\skillnum{HighLib} & Contribute to a numerical software library takes advantage of high performance computing architectures &
+\midrule
+\multicolumn{2}{l}{\emph{Develop \& Optimize}} \tabularnewline
+\skillnum{TwoCPUWrite} & Write numerical programs that take advantage of multiple cores and/or a GPU on a single machine &
+UG & HS & \ref{Camp}\tabularnewline
+\skillnum{ContLib} & Contribute to a well-documented numerical software library consisting of documented, tested, robust routines & & G & \ref{RelSoft} \tabularnewline
+\skillnum{HighLib} & Contribute to a numerical software library that takes advantage of high performance computing architectures &
  & G & \ref{Fellow} \tabularnewline
+%\midrule
+%\multicolumn{2}{l}{\textbf{Optimize}} \tabularnewline
 \skillnum{EffOne} & Analyze the computational efficiency of individual algorithms and identify performance bottlenecks &
 & UG & \ref{CurrExist} \tabularnewline
 \skillnum{EffLarge} & Analyze the computational efficiency of large scale simulations and identify performance bottlenecks &
 & G & \ref{Fellow}\tabularnewline
+\midrule
+\multicolumn{2}{l}{\emph{Apply}} \tabularnewline
 \skillnum{Natural} & Evaluate whether simulation output accurately reflects the natural phenomenon it is designed to emulate &
 UG & UG & \ref{CurrExist}, \ref{Fellow} \tabularnewline
 \skillnum{Decision} & Appreciate how a computation informs decision-making in the application domain and its effect on the kind of computation needed & G & G & \ref{Fellow} \tabularnewline
@@ -240,7 +247,7 @@ UG & UG & \ref{CurrExist}, \ref{Fellow} \tabularnewline
 \bottomrule
 \end{longtable} 
 
-Many of the learning outcomes above are parallel to those given in \cite[Table 1]{RudEtal18a}.  However, that table focuses on the outcome for a PhD in computational science.  Our table above provides intermediate outcomes for those in high school, bachelor's, and master's study.  A future CIC should ideally develop all of the skills labeled HS in high school, all of the skills labeled UG during undergraduate studies, and all of the skills labeled G during graduate studies.  The analogous interpretation applies to CIUs.  Our proposed curricular and extra-curricular innovations, outlined in the remainder of this section, provide opportunities to future CICs and CIUs to develop these skills.  
+Many of the learning outcomes above are parallel to those given in \cite[Table 1]{RudEtal18a}.  \DMNote{Upon seeing this citation I originally thought that it was referring to a table within the grant proposal. It might be a little bit confusing.} However, that table focuses on the outcome for a PhD in computational science.  Our table above provides intermediate outcomes for those in high school, bachelor's, and master's study.  A future CIC should ideally develop all of the skills labeled HS in high school, all of the skills labeled UG during undergraduate studies, and all of the skills labeled G during graduate studies.  The analogous interpretation applies to CIUs.  Our proposed curricular and extra-curricular innovations, outlined in the remainder of this section, provide opportunities to future CICs and CIUs to develop these skills.  
 
 The degree of mastery of any particular skill may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, our students may only be with us for part of their high school through PhD studies.  We are ready to help those whose preparation is lacking to catch up.  When students leave our program they should be fully prepared for the next steps in their growth as computational scientists.
 
@@ -273,9 +280,9 @@ Innovation & \multicolumn{2}{c}{Target} \tabularnewline
 Several of these involve a permanent expansion of our curriculum. The others are extra-curricular activities designed to complement what is learned in the classroom.  We have a track record in most of these areas, but we want to go far beyond our past experience to establish something substantial.
 
 
-\subsection{\CampName} \label{Camp} For the past several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.  Dr.\ Kiah Wah Ong is the instructor.
+\subsection{\CampName} \label{Camp} For the past several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.  Dr.~Kiah Wah Ong is the instructor.
 
-We will broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing (Skills \ref{OneCPU}--\ref{MultiJobs}).  Mathematica has the capability to perform computations in parallel, and we will also investigate the use of other languages.  This summer camp will encourage the students to pursue degrees involving high performance computation and better prepare them for potential careers as computational scientists.  We also hope to attract the students to Illinois Tech's computational science offerings.  
+We will broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing (Skills \ref{OneCPU}, \ref{TwoCPU}, and \ref{TwoCPUWrite}).  Mathematica has the capability to perform computations in parallel, and we will also investigate the use of other languages.  This summer camp will encourage the students to pursue degrees involving high performance computation and better prepare them for potential careers as computational scientists.  We also hope to attract the students to Illinois Tech's computational science offerings.  
 
 Because our students are expected to have diverse backgrounds in computing, we will begin the camp by assessing their existing skills and the break them into groups so that those who need to learn more fundamental skills may do so, while those with more advanced knowledge can be given more challenging assignments.  Illinois Tech students will serve as teaching assistants (TAs) for the camp, which will provide them with the opportunity to reinforce their own learning by teaching the computational science that they have learned. 
 
@@ -288,6 +295,8 @@ Illinois Tech already has a substantial computational science curriculum.  Howev
 
 These courses teach Skills \ref{OneCPU}, \ref{EffOne}, and \ref{Natural}.  However, students tend to take only the courses in their own major.  Thus an applied mathematics student may not really have the chance to develop Skill \ref{Natural}.  The (co-)PIs, who teach some of these courses, will liaise  with other course instructors and the host departments to encourage non-majors to take these courses (Skill \ref{Other}).  This includes publicizing the relevant courses and exploring how we might lower the pre-requisite barriers.
 
+\DMNote{This point doesn't seem very strong but it may be the best that we can do.}
+
 \subsubsection{\RelSoftName} \label{RelSoft} In the Fall 2013 Choi and Hickernell piloted a one-credit course on Reliable Mathematical Software, primarily for their own graduate students.  The course covered truncation and round-off errors,
 stopping criteria for adaptive software,
 creating software collaboratively via Git, 
@@ -296,20 +305,21 @@ input parsing and validation, and
 reproducible computation.
 Students completed a project consisting of a small software library or an extension to an existing library.  Several of the students in this course participated in developing GAIL) \cite{ChoEtal17b}.  This experience helped one student land an academic job teaching computer science, three students land computationally oriented positions in industry, and a fifth student gain admission to a PhD program.
 
-In this project we will grow this to a standard three-credit undergraduate/graduate elective course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add material on working in a multi-lingual environment (Skill \ref{MultiLing}) and small-scale parallel computation (Skills \ref{TwoCPU} and \ref{MultiJobs}).  The prerequisite will be any undergraduate course that covers numerical computation.
+In this project we will grow this to a standard three-credit undergraduate/graduate elective course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add material on working in a multi-lingual environment (Skill \ref{MultiLing}) and small-scale parallel computation (Skills \ref{TwoCPU} and \ref{TwoCPUWrite}).  The prerequisite will be any undergraduate course that covers numerical computation.
 
-\subsubsection{\LargeSCName} \label{LargeSC} Since 2006 the computer science department has offered a graduate course, Advanced Scientific Computation, which covers Skills \ref{Tight}, \ref{AnalVis}, \ref{MultiLing}, \ref{HighLib}, and \ref{EffLarge}.  Dr.\ Hong Zhang from Argonne National Laboratory has taught this course to students in computer science, mathematics, physics, and engineering. Students were exposed to cutting-edge analytic and algorithmic research projects and gained hands-on large-scale numerical programming experience. This course has been a launching point for many students into careers in computational science.  Several of the course projects were integrated into the Portable Extensible Toolobox for Scientific Computing (PETSc) \cite{petsc-web-page17}, benefiting the scientific community in large. At least eight students received summer internships at Argonne after taking her course, and three of her students eventually became post-doctoral researchers at Argonne.  
+\subsubsection{\LargeSCName} \label{LargeSC} Since 2006 the computer science department has offered a graduate course, Advanced Scientific Computation, which covers Skills \ref{Tight}, \ref{AnalVis}, \ref{MultiLing}, \ref{HighLib}, and \ref{EffLarge}.  Dr.~Hong Zhang from Argonne National Laboratory has taught this course to students in computer science, mathematics, physics, and engineering. Students were exposed to cutting-edge analytic and algorithmic research projects and gained hands-on large-scale numerical programming experience. This course has been a launching point for many students into careers in computational science.  Several of the course projects were integrated into the Portable Extensible Toolobox for Scientific Computing (PETSc) \cite{petsc-web-page17}, benefiting the scientific community in large. At least eight students received summer internships at Argonne after taking her course, and three of her students eventually became post-doctoral researchers at Argonne.  
 
 In the past, this course has run only every other year.  We plan to increase the frequency of this course to annually, serving a dozen or more students, by advertising its existence and benefits.  Students taking this course will be more competitive for the other opportunities below.
 
 \subsubsection{\PhyChemBioCompSciName} \label{PhyChemBioCompSci} A new computational physics/chemistry/biology course using OpenScience Grid and XSEDE? \FJHNote{David and Jeff, something here for you?}
+\DMNote{I could see either a computational natural science course or Open Science Grid/XSEDE usage, but combining both would be a bit tricky.}
 
 \subsection{\CODSummerName} \label{CODSummer}
 Community colleges enroll approximately 45\% of the nation's undergraduate students, a disproportionate number of which are underrepresented minorities \cite{KnappKG12,nsfreport13}.  Nearly 90\% of these students have a goal of transferring to four-year institutions to complete their bachelor's degree, however the actual transfer rate is estimated to be only 25-40\% \cite{HoachlanderSH03,MelguizoKA11}.  Studies have shown that involving students, especially those from underrepresented groups, in  research activities decreases  their attrition rate and increases the probability they will pursue further education \cite{BarlowV04,JonesBV10}.
 
-To  encourage the pursuit of bachelor's and advanced degrees by community college students, \JW has partnered in the past with the College of DuPage (COD) to recruit students from their associate degree programs  to engage in a ten-week summer internship program in his research group.  We propose to broaden this program to include several CISC associated research groups at Illinois Tech. Each year we will work with Prof.~Tom Carter of the physics department to advertise and recruit students to this program,  with a particular focus on underrepresented minorities.  These students will be matched with CISC labs based on their research interests and career goals.  Our goal is to aim for 
+To  encourage the pursuit of bachelor's and advanced degrees by community college students, \JW has partnered in the past with the College of DuPage (COD) to recruit students from their associate degree programs  to engage in a ten-week summer internship program in his research group.  We propose to broaden this program to include several CISC associated research groups at Illinois Tech. Each year we will work with Prof.~Tom Carter of the physics department to advertise and recruit students to this program,  with a particular focus on underrepresented minorities.  These students will be matched with CISC labs based on their research interests and career goals.  Our goal is to aim for \DMNote{finish this sentence.}
 
-In the first phase of their internships, the cohort of COD students will spend a week in an intensive computing ``crash course'' that will include topics such as an introduction to linux, programming in python, and the use of high performance computing resources.  For the remaining nine weeks, CoD students will work directly in IIT labs on various computational projects, such as high performance Monte Carlo methods in Choi's and Hickernell's group, ??? in the Minh's group, ??? in Sun's group \JWNote{help me list a few}, and simulations of biomolecular complexes in the Wereszczynski group.  To foster discussions among the CoD students, weekly lunches will be organized.  In addition, at the end of the summer a research symposium will be organized in which students will present a short presentation on their work.  Following the summer period, we will track the career trajectories of these students with annual follow up surveys, and we will maintain mentoring relationship with these students as are appropriate. 
+In the first phase of their internships, the cohort of COD students will spend a week in an intensive computing ``crash course'' \DMNote{Perhaps mention that I will teach this ``taught by Minh''} that will include topics such as an introduction to linux, programming in python, and the use of high performance computing resources.  For the remaining nine weeks, CoD students will work directly in IIT labs on various computational projects, such as high performance Monte Carlo methods in Choi's and Hickernell's group, binding free energy calculations in the Minh's group, ??? in Sun's group \JWNote{help me list a few}, and simulations of biomolecular complexes in the Wereszczynski group.  To foster discussions among the CoD students, weekly lunches will be organized.  In addition, at the end of the summer a research symposium will be organized in which students will present a short presentation on their work.  Following the summer period, we will track the career trajectories of these students with annual follow up surveys, and we will maintain mentoring relationship with these students as are appropriate. 
 
 We will aim for four COD students in 2019, six in 2020, and six in 2021.  Students will be provided \$5000 stipends.  After the project ends, we hope to secure funding to continue from other sources, such as Research Experience for Undergraduate (REU) funding and REU add-on supplemental funding.
 
@@ -320,6 +330,7 @@ To provide more opportunities for the practice of the advanced CI skills that we
 \item Embedding themselves in a computational science research group outside their major, or
 \item Joining a large-scale computational science research project at Argonne, Fermilab, or in a local company.
 \end{itemize}
+\DMNote{What about adapting code for a specific natural science application from a single-core to a high-performance computing architecture? Would this fit under one of the above categories? If not could we consider adding it?}
 
 The former opportunity moves our students outside their silos.  The broadening experience will make them more valuable members of interdisciplinary teams performing large-scale computations.  It will help them learn and practice Skills \ref{Natural}--\ref{Other}.  
 
@@ -327,7 +338,7 @@ CISC began a series of lunchtime matchmaking seminars in the fall of 2017 to int
 
 The ongoing large-scale computational projects at Argonne and Fermilab will provide students the opportunity to learn and practice Skills \ref{TopMach}, \ref{AnalVis}, \ref{MultiLing}, \ref{Decision}, and \ref{Model}.  Argonne has several software development projects including PETSc \cite{petsc-web-page17} and xSDK \cite{XSDK17a}. Fermilab has a heterogeneous computing environment for high energy physics (HEPCloud) \cite{HEP18a} under continuous development.  Two of our external advisory board members, Lois Curfman McInnes (Argonne) and Burt Holzman (Fermilab) will aid us in placing CISC Fellows in these two national labs.
 
-The (co-)PIs have had collaborations and contacts with Chicago-area companies involved in supporting or performing large-scale calculations as part of the research.  We will further develop these contacts and identify sources of possible fellowships.
+The (co-)PIs have had collaborations and contacts with Chicago-area companies involved in supporting or performing large-scale calculations as part of the research.  We will further develop these contacts and identify sources of possible fellowships. \DMNote{It could help to name specific companies.}
 
 Each year, starting in 2019, we will offer CISC fellowships to two undergraduates (\$5000 stipend each) and five graduate students (\$7000 stipend each).  The students will apply in the early part of the year, providing a synopsis of their proposed projects, their curriculum vitae, and letters of recommendation from their advisors and the project supervisors.  The management committee for this project---the (co-)PIs---will decide who will receive the fellowships.  
 
@@ -336,45 +347,70 @@ By the time that this grant is completed, we expect that our overall training pr
 
 \section{Broader Impacts}
 
-\subsection{Educating the Next Computational Scientists} 
-The standard science curricula has not kept pace with the potential of advanced CI for computational science.  Computer science courses teach the about the architectures and languages for large-scale computation, but they do not teach their students how to solve important scientific problems.  Computational mathematics, biology, chemistry, and physics courses do not educate their students in advanced CI.
+\subsection{Educating the Next-Generation Computational Scientists} \DMNote{Remove ``the''?}
+Standard science curricula have not kept pace with the potential of advanced CI for computational science.  Computer science courses teach the architectures and languages for large-scale computation, but they do not teach their students how to solve important scientific problems.  Computational mathematics, biology, chemistry, and physics courses do not educate their students in how best to use and contribute to advanced CI.
 
-The proposed computational science education program proposed here will set students on a path so that by the time they finish their graduate studies, they can be productive computational scientists working on interdisciplinary research teams discovering, predicting and optimizing new science.  Their work will lead to breakthroughs in our understanding the fundamental nature of matter, which will satisfy our curiosity.  Their work will lead to breakthroughs in health and medicine, and in manufacturing, which will improve the quality of our lives and the national economy. 
+Our proposed computational science education program will set students on a path so that by the time they finish their PhD studies, they can be computational scientists making vital contributions to interdisciplinary research teams discovering new science.  Their work will lead to breakthroughs in our understanding nature, from the sub-atomic to the astrophysical scale.  Their work will lead to breakthroughs in health, medicine,  manufacturing and finance, which will improve the quality of our lives and the national economy. 
+
+The students coming leaving our program will carry their academic and practical knowledge of advanced CI to their new research groups in universities, government labs, and companies that they will join.  They will share what they have learned with those who need to use more powerful computing capability, but do not yet know how.  The knowledge that we impart will be multiplied.
 
 \subsection{Impacting Research in Computer Science, Mathematical Science, and Natural Science}
-The interdisciplinary computational research which our proposed program encourages will feed interesting problems to the contributing disciplines:
+The interdisciplinary computational research promoted by our program will generate interesting research problems for the contributing disciplines:
 \begin{itemize}
-\item Complex quantitative models of natural science phenomena will challenge computational mathematicians and computer scientists to develop new algorithms requiring more advanced software and hardware to solve these models.  
-\item The advances in CI will alter how computational mathematicians and computer scientists design algorithms and how they measure algorithmic efficiency.  The simple measures suited to single processor systems do not apply to advanced CI, and the replacement measures need to be developed.  Given the variety of architectures and languages, clock time is not necessarily a good choice.
-\item Large-scale scientific computation enabled by advanced CI will answer existing questions in the natural sciences and prompt new research questions.  
+\item Complex quantitative models of natural science phenomena will challenge computational mathematicians and computer scientists to develop new algorithms that can utilize more advanced software and hardware.  
+\item The advances in CI will alter how computational mathematicians and computer scientists design algorithms and measure algorithmic efficiency.  Efficiency measures for algorithms running on single processors do not apply to advanced CI, and new efficiency measures are needed.  Given the variety of architectures and languages, operation count or  clock time are not adequate good choices.
+\item Large-scale scientific computation enabled by advanced CI will answer existing questions in the natural sciences and prompt new research questions in these sciences.  
 \end{itemize}
-The computational scientists that can answer these new problems will be those who are already proficient contributors and users of advanced CI, i.e., CICs and CIUs.  They must know there own discipline well enough to be able to contribute to answering solving these new problems.  But they must also be conversant in the other disciplines as well.
+The computational scientists educated by our program will be prepared to tackle these new research problems because they will be proficient contributors and users of advanced CI, i.e., CICs and CIUs.  They will know there own disciplines deeply enough to have the new ideas required to solve these new problems.  Because they are conversant in the other disciplines as well, they will know how to their ideas will help.
 
-As an example, consider the situation of quasi-Monte Carlo (qMC) methods (Hickernell's research area), which are used for the evaluation of multi-dimensional integrals. From their 1960s until the early 1990s the developments in qMC were mainly theoretical.  Then in the mid-1990s, Paskov and Traub \cite{PasTra95} showed that qMC could price a collateralized mortgage obligation much more efficiently than simple or independent and identically distributed Monte Carlo (IIDMC).  This was surprising, since existing theory supporting showed that qMC was better than IIDMC up to dimension five or so, but Paskov and Traub's problem had dimension 360.  This computational result challenged mathematicians and computer scientists to re-visit the long-held theory, and the result was dozens of articles and a more complete understanding of the situations in which qMC is superior to MC, even for infinite dimensional integration.  New computation raised new research questions, which then were answered.
+Consider an example involving quasi-Monte Carlo (qMC) methods (Hickernell's research area), which are used to evaluate multi-dimensional integrals. From their 1960s until the early 1990s the progress in qMC was mainly theoretical.  Then in the mid-1990s, Paskov and Traub \cite{PasTra95} showed that qMC could price a collateralized mortgage obligation much more efficiently than independent and identically distributed Monte Carlo (IIDMC).  This was surprising, since existing theory supporting showed that qMC was better than IIDMC up to dimension five or so, whereas Paskov and Traub's problem had dimension 360.  This computational result challenged mathematicians and theoretical computer scientists to re-visit the long-held theory, and the result was dozens of articles and a more complete understanding of the situations in which qMC is superior to MC, even for infinite dimensional integration.  New computation raised new research questions, which  were then answered.
 
-As another example, a couple of years ago, Jim\'enez Rugama, the former PhD student of Hickernell, was invited to join a research group of physicists at Fermilab to explore whether their Monte Carlo (MC) computations could be sped up.  The default MC algorithm being used was several decades old.  Jim\'enez Rugama was able to introduce the group to the much more efficient qMC methods.  In the course of implementing these methods, Jim\'enez Rugama discovered an anomaly in the calculations, which was traced to a bug in the long-standing physics code that generated the particle collision events.
+As another example, a couple of years ago, Jim\'enez Rugama, the former PhD student of Hickernell, was invited to join a research group of physicists at Fermilab to explore whether their Monte Carlo (MC) computations could be sped up.  The default IIDMC algorithm being used was several decades old.  Jim\'enez Rugama was able to introduce the Fermilab group to the much more efficient qMC methods.  In the course of implementing these methods, Jim\'enez Rugama observed an anomaly in the calculations, which was traced to a bug in the long-standing physics code that generated the particle collision events.
 
 \subsection{Modeling How Silos Can be Broken}
-We recognize that computer science, mathematical science, and the several natural sciences are well-defined disciplines.  Someone existing only in one of these silos cannot take full advantage of advanced CI for scientific computation.  The solution is not build a new computational science silo.  The solution is to develop computational scientists that are deep in one discipline but break out of their own silo to be conversant in others.
+We recognize that computer science, mathematical science, and the several natural sciences are well-defined disciplines.  Someone living in one of these silos cannot take full advantage of advanced CI for scientific computation.  The solution is not to build a new computational science silo.  The solution is to develop computational scientists that are deep in one discipline but break out of their own silo to be conversant in others.
+
+Several of the project personnel, including the PI, are conversant in languages and cultures other than the one that they were born into.  We recognize the the strength that comes not from homogenizing cultural differences but from drawing on the strengths of our birth culture while also understanding the cultures that are not our own.
 
 As an analogy, the United States is comprised of people from a mixture of cultures.  Our strength comes not from homogenizing the cultural differences but from drawing on the strengths of our diverse cultural heritage while understanding the cultures that are not our own.  Most of the (co-)PIs have benefited by learning a language and culture other than the one they were born into.
 
-This project will show other educational institutional how to break down the major discipline silos to foster high quality computational science.  The activities that we will implement will be models for others.  We will make our syllabi, training materials, and procedures available on repositories for others to follow and model.  We will publicize our successes and the lessons learned from failures in conference talks.  We will advise those interested to adopt our best practices.
+This project will show other educational institutional how to break down the major discipline silos to foster high quality computational science.  The activities that we will implement will be models for others.  We will make our syllabi, training materials, and procedures available on repositories for others to follow and model. \DMNote{Maybe refer to data management plan for more specifics?} We will publicize our successes and the lessons learned from failures in conference talks.  We will advise those interested to adopt our best practices.
 
 \subsection{Codifying Good Computational Science Practice}
 The practice of good computational science is built upon diverse ideas that are not necessarily contained in one text or reference book.  Some texts on computational science, such as \cite{TveEtal10a}, focus on numerical methods, while others focus, such as \cite{Thi13a}, focus on on scientific applications.  Neither of these types of texts give significant attention to parallel computing or software engineering for high performance computational science software libraries. Texts on high performance computing for computational scientists, such as \cite{MagEtal16a}, are incomplete in their coverage of numerical methods.
 
-As we develop the new course described in Sect. \ref{RelSoft} and as we work with the CISC fellows, we will gather digestible resources describing good computational science practice
+As we develop the new course described in Sect.~\ref{RelSoft} and as we work with the CISC fellows, we will gather digestible resources describing good computational science practice. \DMNote{And then what? Write a review article? Put it on a web page?}
 
 \subsection{Broadening Access to Computational Science Opportunities}
 
+
+
+
 \section{Partnerships and External Advisory Board}
-To maximize the impact of our project, we are partnering with Ms. April Welch, ??? and three outside organizations through key contacts
+To maximize the impact of our project, we are partnering with Ms.~April Welch, Associate Vice-President of Strategic Initiatives at Illinois Tech. Ms.~Welch and her colleagues in Illinois Tech's Office of Enrollment will assist us in recruiting students for the Summer Computational Science Course (see Sect.~\ref{Camp}).
+
+We are also partnering with three other organizations through key contacts:
 \begin{itemize}
-\item Dr.\ Lois Curfman McInnes, Senior Computational Scientist, Argonne National Laboratory, Former PETSc lead, Present xSDK lead
-\item Dr.\ Burt Holzman, 
-\item 
+
+\item Dr.~Tom Carter, Professor of Physics at College of DuPage (COD), a community college in the western suburbs of Chicago, 
+
+\item Dr.~Lois Curfman McInnes, Senior Computational Scientist in the Mathematics and Computer Science Division at Argonne National Laboratory, where she was former PETSc co-lead and is presently xSDK co-lead, and
+
+\item Dr.~Burt Holzman, Assistant Director of the Scientific Computing
+Division at Fermi National Accelerator Laboratory (Fermilab), where he oversees the
+HEPCloud program and coordinates cross-cutting initiatives and solutions
+across the facility.
+
 \end{itemize}
+
+
+Dr.~Carter will partner with us to identify COD students most suited to take advantage of our summer research experience for under-served undergraduates (see Sect.~\ref{CODSummer}).  He will help communicate to the students our expectations for the summer and feedback to us any difficulties that the students are having.  He will also let us know these students' next steps after finishing their COD studies.
+
+Dr.~Curfman McInnes will help us identify large-scale computation projects and advisors at Argonne that are suitable for CISC Fellows (see Sect.~\ref{Fellow}).  Particular attention will be given to PETSc and xSDK related projects.  She will advise in the selection of the CISC Fellows to be placed at Argonne.
+
+Dr.~Holzman will help us identify large-scale computation projects and advisors at Fermilab that are suitable for CISC Fellows (see Sect.~\ref{Fellow}).  Particular attention will be given to HEPcloud projects involving heterogeneous systems.  He will advise in the selection of the CISC Fellows to be placed at Fermilab.
+
+Our External Advisory Board will be comprised of Dr.~Carter, Dr.~Curfman McInnes, and Dr.~Holzman.  This board will meet with the (co-)PIs and Senior Personnel twice a year (by teleconference if necessary), to review the progress of our project and advise us on how our efforts can be even more effective.  Apart from these formal meetings, we will welcome their advice at any time and solicit their advice as needed.
 
 \section{Evaluation}
 
