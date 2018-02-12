@@ -3,7 +3,7 @@
 \newcounter{skillct}
 \newcommand{\skillnum}[1]{\refstepcounter{skillct}\label{#1}\arabic{skillct}.}
 \newcommand{\notyet}{\textcolor{red}{\textbf{?}}}
-\newcommand{\done}{\checkmark}
+\newcommand{\done}{\textcolor{green}{\checkmark}}
 
 
 
@@ -14,6 +14,7 @@
 \bigskip
 \begin{itemize}
 \item \hyperlink{ToDo}{To Do List}
+\item \hyperlink{ProjSumm}{Project Summary}
 \item \hyperlink{ProjDesc}{Project Description}
 \item \hyperlink{Refer}{References}
 \item \hyperlink{Manage}{Management and Coordination Plan}
@@ -34,6 +35,7 @@ All documents are in one so that the references to different sections can be sup
 \noindent \notyet = substantially not finished
 
 \begin{itemize}
+\item[\notyet] Everyone certify
 \item[\done] Title: CyberTraining: CIC:  Cross-Disciplinary Education for Next-Generation Computational Scientists
 \item[\notyet] Project Summary
 \item Project Description
@@ -42,52 +44,54 @@ All documents are in one so that the references to different sections can be sup
 \begin{itemize}
 \item[\done] Fred
 \item[\done] Xian-He
-\item[\notyet] David
-\item[\done] Jeff
+\item[\done] David
+\item[\done] Jeff 
 \item[\done] Sou-Cheng
 %\item[\notyet] Norm
 %\item[\notyet] Kiah Wah
 \end{itemize}
-\item[\done] References
+\item[\notyet] XHS labs that COD students can work in
 %\item[\notyet] Graduate course in computational natural science (David, Jeff)
 \item[\done] Broader impacts
 \item[\done] Assessment
 \item[\notyet] Timeline
+\item[\done] References
+
 \end{itemize}
 
 \item[\done] Budget
 \item[\done] Budget Justification
 
-\item NSF Biosketches
+\item[\done] NSF Biosketches
 \begin{itemize}
 \item[\done] Fred
 \item[\done] Sou-Cheng
 \item[\done] Xian-He
 \item[\done] David
 \item[\done] Jeff
-\item[\notyet] Norm
+\item[\done] Norm
 \item[\done] Kiah Wah
 \end{itemize}
 
 
-\item Collaborators and other affiliations
+\item[\done] Collaborators and other affiliations
 \begin{itemize}
 \item[\done] Fred
 \item[\done] Sou-Cheng %\SCCNote{Sent to Brian Davis  at \texttt{jdavis10@iit.edu} on Feb 9, 2018. A copy, \texttt{20180209\_Sou\_Cheng\_Choi\_COA.xlsx}, is uploaded to Overleaf's project folder \texttt{Biosketch}.}
 \item[\done] Xian-He
 \item[\done] David
-\item[\notyet] Norm
+\item[\done] Norm
 \item[\done] Kiah Wah
 \end{itemize}
 
 \item[\done] Facilities
 
-\item Letters of Collaboration
+\item[\done] Letters of Collaboration
 \begin{itemize}
-\item[\notyet] Lois
+\item[\done] Lois
 \item[\done] Burt
 \item[\done] COD
-\item[\notyet] April Welch
+\item[\done] April Welch
 \end{itemize}
 
 \item[\done] Data Management
@@ -105,6 +109,26 @@ All documents are in one so that the references to different sections can be sup
 \SCCNote{A note from Sou-Cheng} \qquad
 \NLNote{A note from Norm Lederman}\\
 \KWONote{A note from KiahWahOng}\\
+
+\newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\centerline{\Large \textbf{Project Summary}} \hypertarget{ProjSumm}{}
+\subsection*{Overview}
+Computational scientists need to learn how to take advantage of the rapidly evolving cyberinfrastructure eco-system to maximize scientific discovery. The education of computational scientists should begin in their pre-university studies,  extend through their undergraduate and graduate studies, and continue throughout their careers. Key ideas to be learned include computing multi-lingually, utilizing and contributing to substantial software libraries, computing in diverse, advanced hardware environments, being an integral part of an interdisciplinary team, ensuring that computational results have scientific significance, and ensuring that computational results are trustworthy and reproducible.  
+
+This project will develop curricular and extra-curricular elements to teach students from computer science, mathematical science, and natural science how to be productive computational scientists using the most advanced developments in cyberinfrastructure. Illinois Tech will partner with a nearby community college, two national laboratories to leverage our combined resources. Assessment of our efforts will be led by an expert in science education.
+
+This project is aimed primarily at educating cyberinfrastructre contributors (CICs), but will also educate cyberinfrastructure users (CIUs).  The PI has been in contact with Sushil Prasad in the course of developing this proposal.
+
+\subsection*{Intellectual Merit}
+This project, led by the Center for Interdisciplinary Scientific Computation (CISC) and involving personnel from multiple disciplines, will coordinate the resources inside and outside our Illinois Tech to educate future computational scientists with the required breadth of education and experience to utilize advanced cyberinfrastructure in a responsible and efficient way. Our initiatives will be include high school through doctoral students and accommodate students from different majors with different deficiencies.  By providing a breadth of experiences, we will educate future computational scientists with the flexibility needed to adapt to advances in cyberinfrastructure and changes in what are deemed the important scientific problems. 
+
+We will implement a summer computational science course aimed at high school students, and also welcoming college students with minimal computational background.  We will strengthen the content of our existing computational science courses by adding parallelism and industry-proposed projects.  We will add or  expand courses targeted at large-scale computation and good professional practices for computational science.  Local community college students will be immersed in a summer research experiences.  CISC undergraduate and graduate fellows will be placed in the nearby energy labs or in research groups outside their own disciplines.  
+
+\subsection*{Broader Impacts}
+Computational scientists being trained by our new program will cross-pollinate their disciplines with the good computational practices that they learn from other disciplines.  These computational scientists will be better prepared to contribute immediately to large research projects.  The partnerships that we establish with industry and government research labs will be mutually beneficial.  Students who do not pursue careers in computational science will still benefit from the increased opportunities to learn computational thinking and practice.  The reach of this program will extend beyond our own students but to underrepresented minority students in Chicagoland and community college students---those who have less access to research opportunities.  Our renovation of the Illinois Tech's computational science education will be sustained beyond the end of this project.  The lessons that we learn will be shared with others via publications, colloquium talks, and conference talks.  The resources that we develop for our own programs will be  published online.
+
+
 
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -138,31 +162,31 @@ All documents are in one so that the references to different sections can be sup
 \vspace{-6ex}
 
 \section{Introduction}
-Computational sciences typically draw upon the knowledge and strengths of several disciplines, including computer science, mathematical science, and natural sciences.  Realizing the full potential of computational science for discovery requires multidisciplinary teams whose members can take full advantage of advanced hardware architectures and software environments.  Computational scientists often require the following qualities to conduct effective research:
+Computational scientists typically draw upon knowledge from several disciplines, including computer science, mathematical science, and natural science.  Realizing the full potential of computational science for discovery requires multidisciplinary teams whose members can take full advantage of advanced hardware architectures and software environments.  Computational scientists should exhibit the following qualities to conduct effective research:
 
 \begin{itemize}
 \item depth within their chosen disciplines plus breadth across relevant disciplines, overcoming a silo mentality, and
-\item experience with advanced cyberinfrastructure (CI), including the practices that extend beyond what is required for computations on a single processor or a core  in a multi-core CPU (central processing unit).
+\item experience with advanced cyberinfrastructure (CI), including the professional practices required for effective large-scale computation.
 \end{itemize}
 
-The newly established Center for Interdisciplinary Scientific Computation (CISC) \url{http://cos.iit.edu/cisc} at Illinois Institute of Technology (IIT, or Illinois Tech) will lead several new initiatives to educate computational scientists that have the two attributes above.  We will educate high school through doctoral students.  Learning will be curricular and extra-curricular.  We will partner with nearby national laboratories, companies engaged in advanced computing, and schools whose students have less access to research experience and high-end computing facilities.
+The newly established Center for Interdisciplinary Scientific Computation (CISC) \url{http://cos.iit.edu/cisc} at Illinois Institute of Technology (IIT, or Illinois Tech) is proposing several new initiatives to educate computational scientists with qualities highlighted above.  We will educate high school through doctoral students.  Learning will be curricular and extra-curricular.  We will partner with nearby national laboratories, companies engaged in advanced computing, and schools whose students have less access to research experience and high-end computing facilities.
 
 \subsection*{The Challenges}
-Computing solutions to complex scientific problems requires properly educated computational scientists.  This proper education must overcome two kinds of challenges.
+Computing solutions to complex scientific problems requires properly educated computational scientists.  There are two kinds of challenges that must be addressed in providing this proper education.
 
-\subsubsection*{Academic Silos.} Computational science draws on multiple disciplines, including computer science, mathematical science, and natural sciences.  Students must gain a deep understanding of their chosen discipline. Computational scientists should not be a jack of all trades and a master of none.
+\subsubsection*{Academic Silos.} Computational science draws on multiple disciplines, including computer science, mathematical science, and natural science.  Students must gain a deep understanding of their chosen discipline. Computational scientists should avoid becoming a jack of all trades and a master of none.
 
 \begin{itemize}
 \item Computer scientists must understand how emerging languages and architectures enable faster and more scalable computations.  
 
-\item Computational mathematicians must be able to describe and analyze truncation and round-off errors in numerical algorithms, as well as measurement and misspecification errors of statistical models.  They must know how to choose the most efficient algorithms for different kinds of problems.
+\item Computational mathematicians and statisticians must be able to describe and analyze truncation and round-off errors in numerical algorithms, as well as measurement and misspecification errors of statistical models.  They must know how to choose the most efficient algorithms for different kinds of problems.
 
 \item Computational biologists, chemists, and physicists must grasp the important scientific ideas that need to be captured by computations.  They must understand the benefits and limitations of using computer modeling in their respective disciplines.
 
 \end{itemize}
 But this is not enough!  Computational scientists should be a master of one trade and conversant with others.  To be effective members of interdisciplinary teams tackling large, complex computational science problems, computational scientists must be ready to exit their silos and become familiar with other disciplines.
 
-\subsubsection*{Ignorance of Good Practice for Large Scale Computation.}  Solving large, complex computational problems using advanced CI deviates in important ways from what students typically learn in their coursework. See \cite[Sect.\ 2.4]{RudEtal18a} for a more detailed discussion.  Here are some highlights:
+\subsubsection*{Ignorance of Good Practice for Large-Scale Computation.}  Solving large, complex computational problems using advanced CI deviates in important ways from what students typically learn in their coursework. See \cite[Sect.\ 2.4]{RudEtal18a} for a more detailed discussion.  Here are some highlights:
 
 \begin{itemize}
 
@@ -170,7 +194,7 @@ But this is not enough!  Computational scientists should be a master of one trad
 
 \item The software required to solve large problems is often drawn from multiple sources, written in several languages, and developed over the course of years, by different experts.
 
-\item Those who perform computational experiments and those who demonstrate the performance of their new algorithms must ensure that their results can be \emph{reproduced} by others \cite{Pen11}.  
+\item Those who perform computational experiments and those who demonstrate the performance of their new algorithms must ensure that their results are reliable can be reproduced by others \cite{Pen11}.  
 
 \item Software contributors must ensure that their software is robust, interacts well with other software, and can be extended by those who come afterwards.  See \cite{BSS18} for a recent effort to promote these principles broadly.
 
@@ -179,11 +203,13 @@ But this is not enough!  Computational scientists should be a master of one trad
 We propose to overcome these challenges in educating the next generation of computational scientists.
 
 \subsection*{Why CISC is Poised to Lead This}
-CISC was created in May 2017 to leverage Illinois Tech’s existing strengths in computational science for greater impact.  CISC has been given office space, a modest budget, a 256-core cluster, and the good will of supporters among faculty and administrators.  Since its inception, CISC has initiated a series of lunchtime matchmaking seminars \SCCNote{matchmaking means?}, brought its cluster online, hosted special lectures, and sponsored a seed grant competition. Fred J. Hickernell, PI and CISC’s director, is one of several computational mathematicians at Illinois Tech and previously served for twelve years as chair of the applied (and only) mathematics department.  Our computer science department has a historically strong group in high performance computing led by Xian-He Sun, a co-PI.  In recent years, the biology, chemistry, and physics departments have hired computational scientists, including co-PIs David Minh (chemistry, CISC's associate director) and Jeff Wereszczynski (physics).  Co-PI Sou-Cheng Choi is a lead researcher at Allstate Insurance Company's Automotive and Life/Retirement innovation teams, and also a research associate professor in applied mathematics at Illinois Tech.
+CISC was created in May 2017 to leverage Illinois Tech’s existing strengths in computational science for greater impact.  CISC has office space, a modest budget, a 256-core cluster (see the section on Facilities, Equipment and Other Resources).  We also have the good will of supporters among faculty and administrators.  CISC has initiated a series of lunchtime ``matchmaking'' seminars that introduce computational scientists to each others research.  The aim is to promote new interdisciplinary computational research groupls that attract external funding. In support of this aim, CISC sponsored a seed grant competition in the fall of 2017. Fred J. Hickernell, PI and CISC’s director, is one of several computational mathematicians at Illinois Tech and previously served for twelve years as chair of the applied (and only) mathematics department.  Our computer science department has a historically strong group in high performance computing led by Xian-He Sun, a co-PI.  In recent years, the biology, chemistry, and physics departments have hired computational scientists, including co-PIs David Minh (chemistry, CISC's associate director) and Jeff Wereszczynski (physics).  Co-PI Sou-Cheng Choi is a lead researcher at Allstate Insurance Company's Automotive and Life/Retirement innovation teams, and also a research associate professor in applied mathematics at Illinois Tech.
 
-The (co-)PIs have experience developing curricula, mentoring high school students through PhD students, and partnering with College of DuPage, Argonne National Laboratory, and Fermilab.  Our proposed innovations will build upon our track record to build a strong multi-faceted training program for computational scientists.
+In addition to the (co-)PIs, we have enlisted the participation of two senior personnel:  Norman Lederman, who has a long and distinguished record in science education, and Kiah Wah Ong, an early-career colleague with strong teaching experience.
 
-\section{Results from Prior NSF Support} \FJHNote{Everyone needs to fill out their previous experience, need subsections on intellectual merit and broader impacts}
+The (co-)PIs have experience developing curricula, mentoring high school students through PhD students, and partnering with College of DuPage, Argonne National Laboratory, and Fermilab.  Our proposed innovations will build upon our track record to create a strong multi-faceted training program for cross-disciplinary computational scientists.
+
+\section{Results from Prior NSF Support}
 \subsection{Experience of Hickernell and Choi}
 NSF-DMS-1522687, \emph{Stable, Efficient, Adaptive Algorithms for Approximation and 
 Integration}, \$270,000, August 2015 -- July 2018. \label{SectHickernellPrevious}  Hickernell is PI and Choi is senior personnel.  
@@ -211,12 +237,7 @@ One of the primary outcomes of this project in relation to the present proposal 
 
 \subsection{Experience of Minh}
 
-DM is a new investigator and has not previously received NSF funding.  
-
-% \DMNote{Fred, should I still say something about my research (unfunded and NIH funded) and broader impacts?}
-
-% \FJHNote{David, yes, please say something.}
-
+DM is a new investigator and has not previously received NSF funding. Nonetheless, since becoming an independent faculty member, Minh has been heavily involved in computational science, developing new algorithms for sampling configurations of biological macromolecules and calculating protein-ligand binding free energies. He has mentored or is mentoring students from the high school to PhD levels, as well as two postdoctoral scholars. His research and outreach activities are further described in his biosketch.
 
 \subsection{Experience of Sun}  NSF-CNS-1162540, \emph{CSR: Medium: Collaborative Research: Decoupled Execution Paradigm for Data-Intensive High-End Computing,} \$280,766, June 2012 -- August 2016. Sun is the PI.  
 \subsubsection{Intellectual Merit} This collaborative project (total budget \$842,298.00, shared with Prof.~W.\ Gropp of U Illinois and Prof.~Y.~Chen of Texas Tech U developed a decoupled execution paradigm (DEP) to address I/O bottleneck issues. This paradigm enables users to identify and handle data-intensive operations separately. Broader Impacts: Technical hurdles have been identified for decoupled execution, spanning system architecture, programming model, and runtime system. Results are available as recent publications \cite{HeWS16, HeWS16a, HWSX17, HWLS17, HWSH17, KYES16, SuWa14, WaSu14, ZLKR16} and other I/O related publications. In addition, in the past five years, Dr.~Sun has graduated 3 PhD and 11 masters students and supervised 5 postdoctoral and 4 graduate researchers.
@@ -229,7 +250,7 @@ DM is a new investigator and has not previously received NSF funding.
 
 PI of NSF-MCB-1552743   ``CAREER: The Effects of Post-translational Modifications and Histone Variants on Chromatin Fiber Dynamics'' June 2016 -- May 2021, \$790,129.
 
-\subsubsection{Intellectual Merit} The aim of this CAREER award is to use and develop multiscale biophysical simulation techniques to study how DNA is compacted in the cell, and how these mechanisms are regulated to affect gene expression.  The PI's group addresses these issues through the use of molecular dynamics (MD) simulations, along with collaborations at Argonne National Laboratory and the University of Iowa.  Early results have been presented at the annual Biophysical Society Meeting in 2017 and 2018, and a manuscript detailing the mechanisms by which post-translational modifications to the ``H3 tails'' affect the structures and energetics of nucleosomes is under minor review at \textit{eLife.} \SCCNote{Add a citation?}
+\subsubsection{Intellectual Merit} The aim of this CAREER award is to use and develop multiscale biophysical simulation techniques to study how DNA is compacted in the cell, and how these mechanisms are regulated to affect gene expression.  The PI's group addresses these issues through the use of molecular dynamics (MD) simulations, along with collaborations at Argonne National Laboratory and the University of Iowa.  Early results have been presented at the annual Biophysical Society Meeting in 2017 and 2018, and a manuscript detailing the mechanisms by which post-translational modifications to the ``H3 tails'' affect the structures and energetics of nucleosomes is under minor review at \textit{eLife} \cite{MorrisonBSW18}.
 
 \subsubsection{Broader Impacts} To date, this proposal has funded four trainees: one postdoctoral scholar, one PhD student, and two undergraduates from the College of DuPage (COD).  Both undergraduates performed 10-week summer research projects, during which time they learned how to set up, perform, and analyze MD simulations of various biomolecular systems. Mr.~Robert Hickok, who was in our lab in the summer of 2016, is currently enrolled at the University of Illinois at Chicago, whereas Mr.~Meet Patel, who worked with us in 2017, is enrolled at Georgia Institute of Technology.  
 
@@ -260,7 +281,7 @@ UG & HS & \ref{Camp}\tabularnewline
 G & UG & \ref{Fellow} \tabularnewline
 \skillnum{TopMach} & Run jobs on a top-500 machine &
 G & UG & \ref{Fellow} \tabularnewline
-\skillnum{AnalVis} & Use tools for analysis and visualization of large scale simulations &
+\skillnum{AnalVis} & Use tools for analysis and visualization of large-scale simulations &
 G & G & \ref{LargeSC}, \ref{Fellow} \tabularnewline
 \skillnum{MultiLing} & Solve scientific problems that require multiple libraries and languages & G & UG & \ref{Fellow} \tabularnewline
 \skillnum{Repro} & Execute reproducible scientific computations & UG & UG & \ref{RelSoft} \tabularnewline
@@ -275,7 +296,7 @@ UG & HS & \ref{Camp}\tabularnewline
 %\multicolumn{2}{l}{\textbf{Optimize}} \tabularnewline
 \skillnum{EffOne} & Analyze the computational efficiency of individual algorithms and identify performance bottlenecks &
 & UG & \ref{CurrExist} \tabularnewline
-\skillnum{EffLarge} & Analyze the computational efficiency of large scale simulations and identify performance bottlenecks &
+\skillnum{EffLarge} & Analyze the computational efficiency of large-scale simulations and identify performance bottlenecks &
 & G & \ref{Fellow}\tabularnewline
 \midrule
 \multicolumn{2}{l}{\emph{Apply}} \tabularnewline
@@ -287,19 +308,19 @@ UG & UG & \ref{CurrExist}, \ref{Fellow} \tabularnewline
 \bottomrule
 \end{longtable} 
 
-Many of the learning outcomes above parallel to those provided in Table 1 of \cite{RudEtal18a}. However, that table focuses on the outcome for a PhD in computational science.  Our table above provides intermediate outcomes for those in high school, bachelor's, and master's study.  A future CIC should ideally develop all of the skills labeled HS in high school, all of the skills labeled UG during undergraduate studies, and all of the skills labeled G during graduate studies.  The analogous interpretation applies to CIUs.  Our proposed curricular and extra-curricular innovations, outlined in the remainder of this section, provide opportunities to future CICs and CIUs to develop these skills.  
+Many of the learning outcomes above parallel to those provided in Table 1 of \cite{RudEtal18a}. However, that table focuses on the outcome for a PhD in computational science.  Our table above provides intermediate outcomes for those in high school, bachelor's, and master's study.  A future CIC should ideally develop all of the skills labeled HS in high school, all of the skills labeled UG during undergraduate studies, and all of the skills labeled G during graduate studies.  The analogous interpretation applies to CIUs.  Our proposed innovations, outlined in the remainder of this section, provide opportunities to future CICs and CIUs to develop these skills.  
 
-The degree of mastery of any particular skill may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, our students may only be with us for part of their high school through PhD studies.  We are ready to help those whose preparation is lacking to catch up.  When students leave our program they should be fully prepared for the next steps in their growth as computational scientists.
+The degree of mastery of any particular skill may depend on whether the computational scientist is majoring in computer science, mathematical science, or natural science.  Moreover, our students may only be with us for part of their high school through PhD studies.  We are ready to help those whose preparation is lacking catch up to where they need to be.  When students leave our program they should be fully prepared for the next steps in their growth as computational scientists.
 
 \subsection{Proposed Innovations}
 \newcommand{\CampName}{Summer computational science course}
-\newcommand{\CurrExistName}{Increasing accessibility to existing computational science offerings}
+\newcommand{\CurrExistName}{Enriched existing computational science offerings}
 \newcommand{\RelSoftName}{Professional practices for computational science course} 
 \newcommand{\UGradParallelName}{Undergraduate parallel and distributed computing class}
 \newcommand{\LargeSCName}{Large-scale scientific computation course}
 \newcommand{\PhyChemBioCompSciName}{New computational natural sciences course}
 \newcommand{\CODSummerName}{Research experiences for under-served undergraduates}
-\newcommand{\FellowName}{CISC summer fellowships}
+\newcommand{\FellowName}{CISC undergraduate and graduate summer fellowships}
 
 Our innovations will better prepare CICs and CIUs via several modes of learning for different kinds of students.  They can be summarized as follows:
 
@@ -318,25 +339,32 @@ Innovation & \multicolumn{2}{c}{Target} \tabularnewline
 \bottomrule
 \end{tabular}
 \end{center}
-Several of these involve a permanent expansion of our curriculum. The others are extra-curricular activities designed to complement what is learned in the classroom.  We have a track record in most of these areas, but we want to go far beyond our past experience to establish something substantial.
+Several of these innovations involve permanent expansions of our curriculum. The others are extra-curricular activities designed to complement what is learned in the classroom.  We have a track record in most of these areas, but we want to go far beyond our past experience to establish something new and substantial.
 
 
-\subsection{\CampName} \label{Camp} For the past several years Illinois Tech's College of Science has run a three-week computational science summer camp for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Admissions Office publicizes and recruits students for the camp.  Starting in the summer of 2018 this summer camp has an academic home in CISC, while continuing to partner with the Admissions Office.  Dr.~Kiah Wah Ong is the instructor.
+\subsection{\CampName} \label{Camp} Since 2013, Illinois Tech's College of Science has run a (non-residential) three-week computational science summer course for Chicago area high school students.  The goal has been to introduce them to solving mathematical and scientific problems using Mathematica.  The Undergraduate Admissions Office publicizes and recruits students for the course, which has had an average enrollment of 9--10 students in the past.  Starting in the summer of 2018 this summer course has an academic home in CISC, while continuing to partner with the Undergraduate Admissions Office, and in particular, Ms.~April Welch.  Dr.~Kiah Wah Ong is the instructor.
 
-We will broaden this camp to include computing on the CISC cluster to introduce these high school students to multi-core computing (Skills \ref{OneCPU}, \ref{TwoCPU}, and \ref{TwoCPUWrite}).  Mathematica has the capability to perform computations in parallel, and we will also investigate the use of other languages.  This summer camp will encourage the students to pursue degrees involving high performance computation and better prepare them for potential careers as computational scientists.  We also hope to attract the students to Illinois Tech's computational science offerings.  
+We will broaden this course to include computing on the CISC cluster to introduce these high school students to multi-core computing (Skills \ref{OneCPU}, \ref{TwoCPU}, and \ref{TwoCPUWrite}).  Mathematica has the capability to perform computations in parallel, and we will also investigate the use of other languages, such as Python.  This summer course will encourage the students to pursue degrees involving high performance computation and better prepare them for potential careers as computational scientists.  We also hope to attract the students to Illinois Tech's computational science offerings.  
 
-Because our students are expected to have diverse backgrounds in computing, we will begin the camp by assessing their existing skills and the break them into groups so that those who need to learn more fundamental skills may do so, while those with more advanced knowledge can be given more challenging assignments.  Illinois Tech students will serve as teaching assistants (TAs) for the camp, which will provide them with the opportunity to reinforce their own learning by teaching the computational science that they have learned. 
+Because our students are expected to have diverse backgrounds in computing, we will begin the course by assessing their existing skills and the break them into groups so that those who need to learn more fundamental skills may do so, while those with more advanced knowledge can be given more challenging assignments.  Illinois Tech students will serve as teaching assistants (TAs) for the course, which will provide them with the opportunity to reinforce their own learning by teaching the computational science that they have learned. 
 
-Our goal is to host 20 high school students in the summer of 2019 and increase the number each year to 40 high school students steady state in the summer of 2021.  The summer camp is funded by tuition fees.  In order to broader access, we plan to offer tuition scholarships to those with financial need.  Due to the planned expansion, some grant funding may be required to support the tuition expenses in the short term.
+Our goal is to host 15 high school students in the summer of 2019 and increase the number each year to 30 high school students steady state in the summer of 2021.  The summer course has been and will continue to be funded by tuition fees.  In order to broader access, we plan to offer tuition scholarships to those with financial need.
+
+To attain these goals, we will create hard- and soft-copy fliers describing our revamped computational science course. Ms.~Welch's colleagues in the Undergraduate Admissions Office will help us promote the course to high school students as admissions counselors visit Chicagoland high schools.  Hickernell and Ong will make themselves available to brief admissions counselors about the course and tell visiting high school students about it.
+
+We also plan to open this summer computational science course to undergraduate students, primarily from Illinois Tech.  Many our students have scholarships or financial aid, which covers the summer term as well.  We expect students who may not have a strong computing background---but have an curiosity in knowing more---will be attracted to this course.  This will provide them a stepping stone to our more advanced computational science offerings.
+
 
 \subsection{Strengthening undergraduate and graduate level computational science coursework} \label{Curr} 
 Illinois Tech already has a substantial computational science curriculum.  However, it has several deficiencies, which we aim to address.
 
-\subsubsection{\CurrExistName} \label{CurrExist} Illinois Tech quite a few several computational courses.  Computer science offers high performance computing at the undergraduate and graduate levels.  Applied mathematics BS through PhD students must all take at least one computational mathematics course and may choose from a handful of computational mathematics electives. There are two undergraduate computational physics courses, a computational chemistry course, and a computational biology course.
+\subsubsection{\CurrExistName} \label{CurrExist} Illinois Tech offers quite a number of computational science courses.  Computer science offers high performance computing at the undergraduate and graduate levels.  Applied mathematics BS through PhD students are required to take at least one computational mathematics course and may also choose from a rich variety of computational mathematics electives. There are two undergraduate computational physics courses, a computational chemistry course, and a computational biology course.
 
-These courses teach Skills \ref{OneCPU}, \ref{EffOne}, and \ref{Natural}.  However, students tend to take only the courses in their own major.  Thus an applied mathematics student may not really have the chance to develop Skill \ref{Natural}.  The (co-)PIs, who teach some of these courses, will liaise  with other course instructors and the host departments to encourage non-majors to take these courses (Skill \ref{Other}).  This includes publicizing the relevant courses and exploring how we might lower the pre-requisite barriers.
+These courses teach Skills \ref{OneCPU}, \ref{EffOne}, and \ref{Natural}.  However, students tend to take only the courses in their own major.  Thus an applied mathematics student may not really have the chance to develop Skill \ref{Natural}.  The (co-)PIs, who teach some of these courses, will liaise  with other course instructors and the host departments to encourage non-majors to take these courses (Skill \ref{Other}).  We will explore how we might lower the pre-requisite barriers. CISC will create fliers describing the computational science offerings in the College of Science each semester and broadcast this information to Illinois Tech students and their advisors.
 
-\DMNote{This point doesn't seem very strong but it may be the best that we can do.}
+The Monte Carlo course taught by Hickernell 
+
+
 
 \subsubsection{\RelSoftName} \label{RelSoft} In the Fall 2013 Choi and Hickernell piloted a one-credit course on Reliable Mathematical Software, primarily for their own graduate students.  The course covered truncation and round-off errors,
 stopping criteria for adaptive software,
@@ -348,7 +376,7 @@ Students completed a project consisting of a small software library or an extens
 
 In this project we will grow this to a standard three-credit undergraduate/graduate elective course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add material on working in a multi-lingual environment (Skill \ref{MultiLing}) and small-scale parallel computation (Skills \ref{TwoCPU} and \ref{TwoCPUWrite}).  The prerequisite will be any undergraduate course that covers numerical computation.
 
-\subsection{\UGradParallelName} \label{UGradParallel} Sun will be responsible for the enhancement of the CS451 Introduction to Parallel and Distributed Computing class. This class is relative new class and is designed for CS students to gain the basic concepts and skills of parallel and distributed computing systems. How to extend and enhance this class to attract and benefit students from other disciplines of science and engineering is needed to be explored and tested. Letting disciplinary students to have some CS system knowledge is good. But, what should be covered, how much a none CS students can absorb in one semester class, and what are must to have for computational scientists from computer system point of view still need to be explored. In an extreme case, we may need to develop a new class in parallel with CS451 for interdisciplinary study. 
+\subsection{\UGradParallelName} \label{UGradParallel} Sun will be responsible for the enhancement of the CS451 Introduction to Parallel and Distributed Computing class. This class is relatively new class and is designed for CS students to gain the basic concepts and skills of parallel and distributed computing systems. How to extend and enhance this class to attract and benefit students from other disciplines of science and engineering is needed to be explored and tested. Letting disciplinary students to have some CS system knowledge is good. But, what should be covered, how much a none CS students can absorb in one semester class, and what are must to have for computational scientists from computer system point of view still need to be explored. In an extreme case, we may need to develop a new class in parallel with CS451 for interdisciplinary study. 
 
 \subsubsection{\LargeSCName} \label{LargeSC} Since 2006 the computer science department has offered a graduate course, Advanced Scientific Computation, which covers Skills \ref{Tight}, \ref{AnalVis}, \ref{MultiLing}, \ref{HighLib}, and \ref{EffLarge}.  Dr.~Hong Zhang from Argonne National Laboratory has taught this course to students in computer science, mathematics, physics, and engineering. Students were exposed to cutting-edge analytic and algorithmic research projects and gained hands-on large-scale numerical programming experience. This course has been a launching point for many students into careers in computational science.  Several of the course projects were integrated into the Portable Extensible Toolobox for Scientific Computing (PETSc) \cite{petsc-web-page17}, benefiting the scientific community in large. At least eight students received summer internships at Argonne after taking her course, and three of her students eventually became post-doctoral researchers at Argonne.  
 
@@ -389,7 +417,7 @@ By the time that this grant is completed, we expect that our overall training pr
 
 \section{Broader Impacts}
 
-\subsection{Educating the Next-Generation Computational Scientists} \DMNote{Remove ``the''?}
+\subsection{Educating Next-Generation Computational Scientists}
 Standard science curricula have not kept pace with the potential of advanced CI for computational science.  Computer science courses teach the architectures and languages for large-scale computation, but they do not teach their students how to solve important scientific problems.  Computational mathematics, biology, chemistry, and physics courses do not educate their students in how best to use and contribute to advanced CI.
 
 Our proposed computational science education program will set students on a path so that by the time they finish their PhD studies, they can be computational scientists making vital contributions to interdisciplinary research teams discovering new science.  Their work will lead to breakthroughs in our understanding nature, from the sub-atomic to the astrophysical scale.  Their work will lead to breakthroughs in health, medicine,  manufacturing and finance, which will improve the quality of our lives and the national economy. 
@@ -401,7 +429,7 @@ The interdisciplinary computational research promoted by our program will genera
 \begin{itemize}
 \item Complex quantitative models of natural science phenomena will challenge computational mathematicians and computer scientists to develop new algorithms that can utilize more advanced software and hardware.  
 \item The advances in CI will alter how computational mathematicians and computer scientists design algorithms and measure algorithmic efficiency.  Efficiency measures for algorithms running on single processors do not apply to advanced CI, and new efficiency measures are needed.  Given the variety of architectures and languages, operation count or  clock time are not adequate good choices.
-\item Large-scale scientific computation enabled by advanced CI will answer existing questions in the natural sciences and prompt new research questions in these sciences.  
+\item Large-scale scientific computation enabled by advanced CI will answer existing questions in natural science and prompt new research questions in these sciences.  
 \end{itemize}
 The computational scientists educated by our program will be prepared to tackle these new research problems because they will be proficient contributors and users of advanced CI, i.e., CICs and CIUs.  They will know there own disciplines deeply enough to have the new ideas required to solve these new problems.  Because they are conversant in the other disciplines as well, they will know how to their ideas will help.
 
@@ -433,6 +461,8 @@ Community colleges enroll approximately 45\% of the nation's undergraduate stude
 
 \section{Partnerships and External Advisory Board} \label{PartnerSec}
 To maximize the impact of our project, we are partnering with Ms.~April Welch, Associate Vice-President of Strategic Initiatives at Illinois Tech. Ms.~Welch and her colleagues in Illinois Tech's Office of Enrollment will assist us in recruiting students for the Summer Computational Science Course (see Sect.~\ref{Camp}).
+
+Ms.~Welch and her colleagues have established multiple programs for recruiting and supporting high school students with disadvantaged socio-economic backgrounds and preparing them to succeed at a rigorous university like Illinois Tech. The Undergraduate Admissions Office has a network of staff members and alumni actively recruiting African-American and Hispanic students for admission to Illinois Tech and the summer programs that her office supports. 
 
 We are also partnering with three other organizations through key contacts:
 \begin{itemize}
