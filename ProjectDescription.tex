@@ -2,7 +2,7 @@
 \input{CyberTrainingMacros.tex}
 \newcounter{skillct}
 \newcommand{\skillnum}[1]{\refstepcounter{skillct}\label{#1}\arabic{skillct}.}
-\newcommand{\notyet}{\textbf{?}}
+\newcommand{\notyet}{\textcolor{red}{\textbf{?}}}
 \newcommand{\done}{\checkmark}
 
 
@@ -13,23 +13,29 @@
 \centerline{\Large \textbf{Contents of This Document}}
 \bigskip
 \begin{itemize}
-\item To Do List
-\item Project Description
-\item References
-\item Management and Coordination Plan
-\item Data Management
-\item Budget Justification
+\item \hyperlink{ToDo}{To Do List}
+\item \hyperlink{ProjDesc}{Project Description}
+\item \hyperlink{Refer}{References}
+\item \hyperlink{Manage}{Management and Coordination Plan}
+\item \hyperlink{DataManage}{Data Management}
+\item \hyperlink{Facilities}{Facilities and Other Resources}
+\item \hyperlink{BudgetJust}{Budget Justification}
 \end{itemize}
 
 All documents are in one so that the references to different sections can be supported.
 
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\centerline{\Large \textbf{To Do List}}
+\centerline{\Large \textbf{To Do List}}\hypertarget{ToDo}{}
 \bigskip
 
+\noindent \done $=$ mostly done
+
+\noindent \notyet = substantially not finished
+
 \begin{itemize}
-\item[\done] Confirm Title: CyberTraining: CIC:  Cross-Disciplinary Education for Next-Generation Computational Scientists
+\item[\done] Title: CyberTraining: CIC:  Cross-Disciplinary Education for Next-Generation Computational Scientists
+\item[\notyet] Project Summary
 \item Project Description
 \begin{itemize}
 \item Previous funding
@@ -44,11 +50,13 @@ All documents are in one so that the references to different sections can be sup
 \end{itemize}
 \item[\done] References
 %\item[\notyet] Graduate course in computational natural science (David, Jeff)
-\item[\notyet] Broader impacts
-\item[\notyet] Evaluation (Norm)
+\item[\done] Broader impacts
+\item[\done] Assessment
+\item[\notyet] Timeline
 \end{itemize}
 
-\item[\notyet] Budget
+\item[\done] Budget
+\item[\done] Budget Justification
 
 \item NSF Biosketches
 \begin{itemize}
@@ -66,16 +74,13 @@ All documents are in one so that the references to different sections can be sup
 \begin{itemize}
 \item[\done] Fred
 \item[\done] Sou-Cheng %\SCCNote{Sent to Brian Davis  at \texttt{jdavis10@iit.edu} on Feb 9, 2018. A copy, \texttt{20180209\_Sou\_Cheng\_Choi\_COA.xlsx}, is uploaded to Overleaf's project folder \texttt{Biosketch}.}
-\item[\notyet] Xian-He
+\item[\done] Xian-He
 \item[\done] David
 \item[\notyet] Norm
 \item[\done] Kiah Wah
 \end{itemize}
 
-\item Facilities
-\begin{itemize}
-\item[\notyet] Xian-He's lab
-\end{itemize}
+\item[\done] Facilities
 
 \item Letters of Collaboration
 \begin{itemize}
@@ -85,18 +90,19 @@ All documents are in one so that the references to different sections can be sup
 \item[\notyet] April Welch
 \end{itemize}
 
-\item[\notyet] Data Management
+\item[\done] Data Management
 
-\item[\notyet] Management
+\item[\done] Management and Coordination Plan
+
 \end{itemize}
 
 \bigskip
 
 \noindent
-\XHSNote{A note from Xian-He}\\
-\DMNote{A note from David} \\
+\XHSNote{A note from Xian-He}\qquad
+\DMNote{A note from David} \qquad
 \JWNote{A note from Jeff} \\
-\SCCNote{A note from Sou-Cheng} \\
+\SCCNote{A note from Sou-Cheng} \qquad
 \NLNote{A note from Norm Lederman}\\
 \KWONote{A note from KiahWahOng}\\
 
@@ -123,10 +129,10 @@ All documents are in one so that the references to different sections can be sup
 % 8. Are the plans for management and collaboration effective?
 
 
-\centerline{\Large \textbf{Project Description}}
+\centerline{\Large \textbf{Project Description}} \hypertarget{ProjDesc}{}
 \vspace{-2ex}
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents %Help the readers navigate the proposal
 
 \vspace{-6ex}
@@ -289,6 +295,7 @@ The degree of mastery of any particular skill may depend on whether the computat
 \newcommand{\CampName}{Summer computational science course}
 \newcommand{\CurrExistName}{Increasing accessibility to existing computational science offerings}
 \newcommand{\RelSoftName}{Professional practices for computational science course} 
+\newcommand{\UGradParallelName}{Undergraduate parallel and distributed computing class}
 \newcommand{\LargeSCName}{Large-scale scientific computation course}
 \newcommand{\PhyChemBioCompSciName}{New computational natural sciences course}
 \newcommand{\CODSummerName}{Research experiences for under-served undergraduates}
@@ -340,6 +347,8 @@ reproducible computation.
 Students completed a project consisting of a small software library or an extension to an existing library.  Several of the students in this course participated in developing GAIL) \cite{ChoEtal17b}.  This experience helped one student land an academic job teaching computer science, three students land computationally oriented positions in industry, and a fifth student gain admission to a PhD program.
 
 In this project we will grow this to a standard three-credit undergraduate/graduate elective course.  In addition to a fuller treatment of the above topics, which address Skills \ref{Repro}--\ref{ContLib}, we will add material on working in a multi-lingual environment (Skill \ref{MultiLing}) and small-scale parallel computation (Skills \ref{TwoCPU} and \ref{TwoCPUWrite}).  The prerequisite will be any undergraduate course that covers numerical computation.
+
+\subsection{\UGradParallelName} \label{UGradParallel} Sun will be responsible for the enhancement of the CS451 Introduction to Parallel and Distributed Computing class. This class is relative new class and is designed for CS students to gain the basic concepts and skills of parallel and distributed computing systems. How to extend and enhance this class to attract and benefit students from other disciplines of science and engineering is needed to be explored and tested. Letting disciplinary students to have some CS system knowledge is good. But, what should be covered, how much a none CS students can absorb in one semester class, and what are must to have for computational scientists from computer system point of view still need to be explored. In an extreme case, we may need to develop a new class in parallel with CS451 for interdisciplinary study. 
 
 \subsubsection{\LargeSCName} \label{LargeSC} Since 2006 the computer science department has offered a graduate course, Advanced Scientific Computation, which covers Skills \ref{Tight}, \ref{AnalVis}, \ref{MultiLing}, \ref{HighLib}, and \ref{EffLarge}.  Dr.~Hong Zhang from Argonne National Laboratory has taught this course to students in computer science, mathematics, physics, and engineering. Students were exposed to cutting-edge analytic and algorithmic research projects and gained hands-on large-scale numerical programming experience. This course has been a launching point for many students into careers in computational science.  Several of the course projects were integrated into the Portable Extensible Toolobox for Scientific Computing (PETSc) \cite{petsc-web-page17}, benefiting the scientific community in large. At least eight students received summer internships at Argonne after taking her course, and three of her students eventually became post-doctoral researchers at Argonne.  
 
@@ -448,7 +457,7 @@ Dr.~Holzman will help us identify large-scale computation projects and advisors 
 
 Our External Advisory Board will be comprised of Dr.~Carter, Dr.~Curfman McInnes, and Dr.~Holzman.  This board will meet with the (co-)PIs and Senior Personnel twice a year (by teleconference if necessary), to review the progress of our project and advise us on how our efforts can be even more effective.  Apart from these formal meetings, we will welcome their advice at any time and solicit their advice as needed.
 
-\section{Evaluation}
+\section{Assessment}
 The proposed project is both ambitious and complex. There are four levels of participants (i.e., high school students, community college students, undergraduate students, and graduate students) as well as participants that are classified as cyberinfrastructure (CI) users (CIUs) and contributors (CICs). There are 16 different learning outcomes, all of which are performance tasks as opposed to understandings that are assessed with paper and pencil exams. In addition, the proposed project will also track the post project trajectory of the various participant levels (e.g., future course enrollments, employment situations, etc.). In order to insure the trustworthiness of data collected, all assessments will have established content validity as well as inter-rater agreement (i.e., reliability).
 
 \subsection{Content Validity of Assessments}
@@ -471,7 +480,7 @@ Finally, it will be of particular interest to follow the professional trajectori
 One of the most intriguing driving motivations for the proposed project is the breaking down of disciplinary silos with respect to the program focus on an area that is clearly interdisciplinary. Participants in this project will come from a variety of subject matter areas, as well as different educational levels. It is unclear if there is any relationship among disciplinary areas, educational levels, and potential professional trajectories within cyberinfrastructure. One final focus of data analysis, although clearly exploratory, will be a correlation matrix that includes educational level, disciplinary background, program success (with respect to outcomes), and career trajectory. Depending on the results of such an analysis, further more targeted analyses may be pursued.
 
 
-
+\section{Timeline}
 
 
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -481,14 +490,15 @@ One of the most intriguing driving motivations for the proposed project is the b
 \bibliographystyle{spbasic}
 
 {\renewcommand\addcontentsline[3]{} 
-\renewcommand{\refname}{{\Large\textbf{References Cited}}}                   %%
+\renewcommand{\refname}{{\Large\textbf{References Cited}}}                  %%
 \renewcommand{\bibliofont}{\normalsize}
 
-\bibliography{FJH23,FJHown23,GregPapers,jeff}}
+\bibliography{FJH23,FJHown23,GregPapers,jeff}\hypertarget{Refer}{}}
 
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \centerline{\textbf{\Large Management and Coordination Plan}}
+\hypertarget{Manage}{}
 % Supplementary Document 1. Management and Coordination Plan (2 pages): Each proposal must contain a clearly-labeled Management and Coordination Plan that includes: 1) the specific roles of the PI, co-PIs, other Senior Personnel and paid consultants at all institutions involved; 2) how the project will be managed across institutions and disciplines; 3) identification of the specific coordination mechanisms; and 4) pointers to the budget line items that support these management and coordination mechanisms.
 
 
@@ -569,69 +579,75 @@ H\Salaries, M\Salaries, S\Salaries, W\Salaries \tabularnewline
 \ref{PartnerSec} & \multicolumn{2}{p{0.5\textwidth}}{Organizing meetings of the Management Team and the External Advisory Board} & Hickernell &H\Salaries \tabularnewline
 \end{longtable}
 
-
-
-
-
-
-
-
-\subsection*{Timeline}
-
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \centerline{\textbf{\Large Data Management Plan}}
+\hypertarget{DataManage}{}
 
 \bigskip
 
 
 
-This plan will make certain that the data produced during the period of this project is appropriately managed to ensure its usability, access and preservation.  The data produced by the proposed project will consist of cyberinfrastructure theory, new software, good practices for cyberinfrastructure training, course materials, program guidelines. 
+This plan will make certain that the data produced during the period of this project is appropriately managed to ensure its usability, access, and preservation.  The data produced by the proposed project will consist of cyberinfrastructure theory, new software, good practices for cyberinfrastructure training, course materials, and program guidelines. 
 
-\subsection*{Peer-Reviewed Articles}  The PI, Co-PI, and participants in this project will publish the results of their theoretical, and computational investigations as early as appropriate in the form of peer-reviewed journal articles, conference abstracts and talks at various conferences and institutions. Authorship will accurately 
+\subsection*{Publications and Lectures}  The goal of this project is training CICs and CIUs to use advanced CI for research, and we expect original research to arise in the training process.  The participants, including (co-)PIs, senior personnel, external advisors, and students, will disseminate the results of their theoretical discoveries, their computational investigations, and their new insights into CI education as early as appropriate in the form of peer-reviewed journal articles, conference abstracts and lectures at various conferences and institutions. Authorship will accurately 
 reflect the contributions of those involved.  Students will be particularly encouraged to publish their work. When allowed by publishers, pre-prints of publications will be posted on arXiv.
 
-\subsection*{Contributions to Computational Science Forums} The best practices that we discover and the resources that we develop during this project will be contributed 
-
 \subsection*{Software}
-Most software resulting from this project will fall within the scope of the Guaranteed Automatic 
-Integration Library (GAIL) and will become part of future public releases.  GAIL will be hosted on 
-Github or a similar accessible repository as it is now.  It will be publicized through colloquium and 
+Software packages of libraries resulting from this project will be stored on public repositories, such as GitHub, and made available for adoption and improvement by others.  This is the practice already with our Guaranteed
+Integration Library (GAIL) \cite{ChoEtal17b} and many major software libraries developed by others.  Software may also be published through ACM-TOMS and similar journals. Our software developments be publicized through colloquium and 
 conference talks and e-newsletters such as the NA-Digest.
 
-Substantial software resulting from this project that does not fit within GAIL will likewise be 
-published in an accessible repository.
+\subsection*{Course Materials} Lecture notes and example code developed for our key courses---the summer computational science course, the crash course for REU students, the new professional practices course, and the large-scale computation course---will be made available on public repositories such as GitHub or Google Drive.
 
-In the spirit of reproducible research, the code used for numerical tests and figures for our 
-publications will be included in the GAIL and other repositories.
 
-\subsection*{Course Materials}
+\subsection*{Web Publication} The CISC website will serve as an index to the data generated by this project.  This will include pointers to publications arising from this project, software arising out of this project, and course materials, as mentioned above.  
 
-\subsection*{Program Practices and Guidelines}\ 
+We find that sample or template code, e.g., demonstrating how to run a job on a cluster, how to run a job utilizing multiple cores, or how to run a job based on a specialized package, are useful teaching devices.  We will store these samples on public repositories and provide pointers to them on the CISC website.
 
+Information about to our initiatives, including goals, policies, and benchmarks will also be available on the CISC website.
+
+The best practices that we discover disseminated on public computational science forums, such as the newly established \cite{BSS18}.
+
+
+\bigskip
+\noindent
 We will fully comply with all applicable guidelines and policies on model and data sharing as mandated or recommended by NSF.
-
 This Data Management Plan addresses NSF’s policy on the dissemination and sharing of research results within a reasonable time.  In accordance with this policy, this plan does not include preliminary analyses (including raw data), drafts of scientific papers, plans for future research, peer reviews, or communications with colleagues. 
+
 
 
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \centerline{\textbf{\Large Facilities, Equipment and Other Resources}}
+\hypertarget{Facilities}{}
 
 \bigskip
 
-Sou-Cheng Terrya Choi, the co-PI will join the regular management team meetings, in addition to working remotely.  She is employed full-time outside academia, but contributes to the project on a volunteer 
+Sou-Cheng Terrya Choi (co-PI), Research Associate Professor of Applied Mathematics, will join the regular management team meetings, in addition to working remotely.  She is employed full-time outside academia, but will contribute to the project on a volunteer 
 basis.  No salary is requested for her, but her travel related to the project will be supported.
 
-All Illinois Tech faculty, PhD students, and visitors have offices provided at Illinois Tech.  Summer MS, BS, and high school students have shared work areas.  In addition to faculty, student and visitor 
-offices and conference rooms provided by the Department of Applied Mathematics, the Center for Interdisciplinary Scientific Computation (CISC) also has office and meeting space available for use by this project.
+Kiah-Wah Ong (Senior Personnel), Lecturer in Applied Mathematics, will contribute to the project as a regular faculty member, whose summer teaching is supported by tuition income.
+
+April Welch (Internal Collaborator), Associate Vice-President of Strategic Initiatives, is supporting this project through the resources of the Admissions Office.  No salary is requested for her.
+
+All Illinois Tech faculty, PhD students, and visitors have offices provided at Illinois Tech.  Summer COD REU students and CISC Fellows will be provided shared work areas.  In addition to faculty, student and visitor 
+offices and conference rooms provided by the Department of Applied Mathematics, the Center for Interdisciplinary Scientific Computation (CISC) also has office and meeting space available for this project.
 
 CISC has a 256-core cluster named von Neumann funded by the 
-College of Science.  An increase in the number of cores within the year is likely. Von Neumann is available available to all Illinois Tech research faculty and is
+College of Science.  An increase in the number of cores within 2018 is likely. Von Neumann is available available to all Illinois Tech research faculty and is
 centrally managed by Illinois Tech Office of Technology (OTS) Services.  Illinois Tech is connected to the \href{https://www.opensciencegrid.org}{Open Science Grid} through its own GridIIT.  
 
-\FJHNote{XHS, please add your resources here}
+\JW is the campus champion for XSEDE.  He can assist research groups who wish to take advantage of that facility apply for time.
+
+Sun directs the Scalable Computing Software (SCS) Laboratory at IIT. The computing facilities at the SCS Laboratory include a 64-node Sun Microsystems ComputeFarm, a 17-node Dell cluster, a 14-node IBM Linux-based cluster, a 12-node Cray XD1 supercomputer, a 72-processor SiCortex cluster, and other advanced computing and communication facilities. The Sun ComputeFarm is connected fully with Gigabit Ethernet and partially with InfiniBand.
+
+Sun and his group also have access to the Chameleon Cloud platform. Chameleon is consisted with two clusters located in Texas Advanced Computing Center (TACC) at Texas and University of Chicago. Chameleon has 291 compute nodes fully connected with 10Gbps Ethernet network, and 41 of them are also double connected via Fourteen Data Rate (FDR) InfiniBand (56Gbps).
+
+
+
+Illinois Tech is partnering with our advisory board, which is comprised of scientists at College of DuPage, Argonne National Laboratory, and Fermilab (see Sect.~\ref{PartnerSec}).  Argonne and Fermilab have large-scale computational facilities that our students will be able to access when involved in projects with these two laboratories.
 
 Illinois Tech has site licenses for Mathematica, MATLAB, SAS, and JMP.  Other open source software is also installed in our research and teaching laboratories.
 
@@ -643,54 +659,38 @@ Illinois Tech was listed on the National Federal Register of Historic Places in 
 \newpage \setcounter{page}{1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \centerline{\textbf{\Large Budget Justification}}
+\hypertarget{BudgetJust}{}
 
 \subsection*{Salaries and Wages}
 
-Fred J. Hickernell, the PI is budgeted at two months of summer salary per year.  He will lead 
-the research.  This includes leading the weekly research seminar and  meeting individually with the 
-students and visitors involved in this project.
-
-The proposed salary for the graduate research assistant is vital, not only for the training of students, 
-but also as brainpower to contribute to the construction, analysis, and implementation of our new 
-algorithms.  The graduate research assistant will also help to mentor the REU students.
-
-The undergraduate salaries are for two REU students per summer.  This research experience helps 
-prepare students for further study and STEM careers by exposing them to the solving of problems 
-whose answers are yet unknown.
+Hickernell, Lederman, Minh, Sun, and \JW are each budgeted for roughly half a month of summer salary per year.  They will each lead certain initiatives as detailed in the Management and Coordination Plan.
 
 \subsection*{Fringe Benefits}
 Fringe benefit rate is 23.8\% for academic year salary and 7.9\% for the summer month
 salary.
 
 \subsection*{Travel}
-The PI and co-PI will travel to several conferences each year to disseminate their work and to learn 
-what others have discovered.  These include, e.g., annual meetings of the major mathematical and 
-statistical societies, specialized meetings in Monte Carlo methods and related fields, and regional 
-conferences. 
+The PI will travel to the NSF PIs meeting each year.  Co-PIs and Senior Personnel will travel to report the results arising from this project at conferences.
 
-We often take our students to conferences with us so that they may have the experience of 
-presenting their work and networking with the academic community.  The REU students are always 
-encouraged to attend conferences to present their work. 
+\subsection*{Participant Costs}
+COD students in the Summer REU will be paid stipends of \$5000 each.  We expect to recruit 4 students in 2019, 6 students in 2010, and 6 students in 2021.  CISC Summer Undergraduate Fellows will also be paid stipends of \$5000 each. We expect to recruit 2 students in 2019, 3 students in 2010, and 3 students in 2021.  CISC Summer Graduate Fellows will be paid stipends of \$7000 each. We expect to recruit 5 students in 2019, 6 students in 2010, and 7 students in 2021. 
 
-\subsection*{Other Direct Costs - Tuition}
-The current tuition rate is \$1,470 per credit hour. Amount requested is 
-\$1,470 $\times$ 9 credit hours per year = \$13,200 per year.
+Participants from the Summer REU and the CISC Fellows program who achieve significant results may apply for travel grants to (partially) support their attendance at conferences to present their work.  Each year \$7000 will be available to support participant travel.
+
+
+
+\subsection*{Other Direct Costs --- Materials \& Supplies}
+Materials will be developed and printed. recruiting participants for the Summer Course, the Summer REU, and the CISC Fellows.  Certain minor software purchases may be needed for these activities.
 
 \subsection*{Indirect Costs}
 Our federally negotiated rate is 53\% of modified total direct costs.
+
 
 \subsection*{Inflation}A 4\% annual increase applies to all categories
 
 
 \end{document}
 
-\newcommand{\CampName}{Summer camp for high school students}
-\newcommand{\CurrExistName}{Increasing accessibility to existing computational science offerings}
-\newcommand{\RelSoftName}{Professional practices for computational science course} 
-\newcommand{\LargeSCName}{Large-scale scientific computation course}
-\newcommand{\PhyChemBioCompSciName}{New computational natural sciences course}
-\newcommand{\CODSummerName}{Research experiences for under-served undergraduates}
-\newcommand{\FellowName}
 
 1. Management and Coordination Plan (2 pages): Each proposal must contain a clearly-labeled Management and Coordination Plan that includes: 1) the specific roles of the PI, co-PIs, other Senior Personnel and paid consultants at all institutions involved; 2) how the project will be managed across institutions and disciplines; 3) identification of the specific coordination mechanisms; and 4) pointers to the budget line items that support these management and coordination mechanisms.
 
