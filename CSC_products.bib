@@ -1,0 +1,523 @@
+@comment{
+ This is Sou-Cheng Choi's bibliograhy database and is built from the following steps:
+ (1), refs.bib from Michael Saunders, relabeled to refs3.bib
+ (2), setting up compilation environment (MikTex and WinEdt, latest versions) with Lek-Heng Lim's help
+ (3), include the following two lines from main file
+
+    \bibliographystyle{plain}
+    \bibliography{refs3} % database refs3.bib in the same directory as this file, no .bib typed in {}.
+ (4) in WinEdt,
+     ->  "bibtex" button
+     -> "PDF Texify" button
+ (5) For published mathematical articles/books:
+    (i) add bibliography items using MathSciNet's bibtex
+    (i) customize contents or formats of items in (i):
+	- replace " (electronic)" with empty string
+	- find spelling of first names using MathSciNet or internet or Science Citation Index (SCI)
+	- remove some fields like NOTE if necessary
+ (6) For unpublished mathematical articles/books, use internet search engine
+ (7) For Thesis, use Stanford Library to build bibtex items
+ (8) For Computer Science articles/books, use internet search engine or CiteSeer
+ (9) For articles from other fields, use SCI or internet search engine
+
+ Clever tricks:
+================
+ (1) use the following to switch the order of two papers. Eg. PS82a, PS82b
+  title={\rlap{\phantom{z}}{...}};
+
+ Questions:
+  review
+ (1) inproceedings
+ (2) techreport
+ (3) [GG06]
+}
+
+@string{BIT     = {Nordisk Tidskr. Informationsbehandling (BIT)}}
+@string{CACM    = {Commun. ACM}}
+@string{CJ      = {Computer Journal}}
+@string{IJCMA   = {Intern. J. of Computers and Mathematics with Applications}}
+@string{INFJOC  = {INFORMS J. on Computing}}
+@string{LAA     = {Linear Algebra and its Applications}}
+@string{JOR     = {Operations Research}}
+@string{JOTA    = {J. Optim. Theory and Applics.}}
+@string{MC      = {Math. Comp.}}
+@string{MS      = {Management Science}}
+@string{MP      = {Math. Program.}}
+@string{MPStudy = {Math. Program. Study}}
+@string{NM      = {Numer. Math.}}
+@string{ORL     = {Operations Research Letters}}
+@string{SR      = {SIAM Review}}
+@string{SIC     = {SIAM J. Computing}}
+@string{SICO    = {SIAM J. Control Optim.}}
+@string{SIAM    = {SIAM J. Appl. Math.}}
+@string{SINUM   = {SIAM J. Numer. Anal.}}
+@string{SIMAX   = {SIAM J. Matrix Anal. Appl.}}
+@string{SIOPT   = {SIAM J. Optim.}}
+@string{SIREV   = {SIAM Review}}
+@string{SISSC   = {SIAM J. Sci. and Statist. Comput.}}
+@string{SISC    = {SIAM J. Sci. Comput.}}
+@string{SIAM    = {Society for Industrial and Applied Mathematics}}
+@string{TOMS    = {ACM Trans. Math. Software}}
+@string{TAMS    = {Trans. Amer. Math. Soc.}}
+@string{JACM    = {J. Association for Computing Machinery}}
+@string{JGC     = {J. of Guidance, Control, and Dynamics}}
+@string{NAC     = {Report NAC}}
+@string{DNAM    = {Report DNAM}}
+@string{OPTSYST = {Division of Optimization and Systems Theory,
+		  Department of Mathematics, Royal Institute of
+		  Technology}}
+@string{NPL     = {National Physical Laboratory, England}}
+
+@comment{
+==========Mathematics, MathSciNet======================================================
+}
+
+
+@comment{
+*******************************************************************
+*
+* Publications
+*
+*******************************************************************
+}
+
+@article{SKNF11,
+  title={Software citation principles},
+  author={Smith, Arfon M and Katz, Daniel S and Niemeyer, Kyle E and {FORCE11 Software Citation Working Group}},
+  journal={PeerJ Computer Science},
+  volume={2},
+  pages={e86},
+  year={2016},
+  publisher={PeerJ Inc.}
+}
+
+@incollection{CLM17,
+  title={Comparison of Public-Domain Software and Services For Probabilistic Record Linkage and Address Standardization},
+  author={Choi, Sou-Cheng T and Lin, Yongheng and Mulrow, Edward},
+  booktitle={Towards Integrative Machine Learning and Knowledge Extraction},
+  pages={51--66},
+  year={2017},
+  publisher={Springer}
+}
+
+@article{KCNN16,
+	author = {Daniel S. Katz and
+                  Sou-Cheng T. Choi and
+                  Kyle E. Niemeyer and
+                  James Hetherington and
+                  Frank L\"{o}ffler and
+                  Dan Gunter and
+                  Ray Idaszak and
+                  Steven R. Brandt and
+                  Mark A. Miller and
+                  Sandra Gesing and
+                  Nick D. Jones and
+                  Nic Weber and
+                  Suresh Marru and
+                  Gabrielle Allen and
+                  Birgit Penzenstadler and
+                  Colin C. Venters and
+                  Ethan Davis and
+                  Lorraine Hwang and
+                  Ilian Todorov and
+                  Abani Patra and
+                  Miguel de Val-Borro},
+	title = {Report on the Third Workshop on Sustainable Software for Science:
+               Practice and Experiences {(WSSSPE3)}},
+	journal = {Journal of Open Research Software},
+	volume = {4},
+	number = {1},
+	year = {2016},
+         url = {https://openresearchsoftware.metajnl.com/article/10.5334/jors.118/},
+}
+
+@article{KCWH16,
+	author = {Daniel S. Katz and
+               Sou-Cheng T. Choi and
+               Nancy Wilkins{-}Diehr and
+               Neil Chue Hong and
+               Colin C. Venters and
+               James Howison and
+               Frank J. Seinstra and
+               Matthew Jones and
+               Karen Cranston and
+               Thomas L. Clune and
+               Miguel de Val{-}Borro and
+               Richard Littauer},
+	title = {Report on the Second Workshop on Sustainable Software for Science:
+               Practice and Experiences {(WSSSPE2)}},
+	journal = {Journal of Open Research Software},
+	volume = {4},
+	number = {1},
+	year = {2016},
+         url = {http://openresearchsoftware.metajnl.com/articles/10.5334/jors.85/}
+}
+
+@article{KCLM14,
+	author = {Daniel S. Katz and Sou-Cheng T. Choi and Hilmar Lapp and Ketan Maheshwari and Frank L\"{o}ffler and Matthew Turk and Marcus Hanwell and Nancy Wilkins-Diehr and James Hetherington and James Howison and Shel Swenson and Gabrielle Allen and Anne Elster and Bruce Berriman and Colin Venters},
+	title = {Summary of the First Workshop on Sustainable Software for Science: Practice and Experiences ({WSSSPE1})},
+	journal = {Journal of Open Research Software},
+	volume = {2},
+	number = {1},
+	year = {2014},
+        issn = {2049-9647},	
+         url = {http://openresearchsoftware.metajnl.com/article/view/jors.an}
+}
+
+@article{C14b,
+    AUTHOR = {Choi, Sou-Cheng T.},
+    TITLE  = {A Complementarity Approach to Solving Computable General Equilibrium Models},
+   JOURNAL = {Computational Economics},
+   Year    = {2014},
+   issn={0927-7099},
+   doi={10.1007/s10614-014-9462-7},
+   url={http://dx.doi.org/10.1007/s10614-014-9462-7},
+   publisher={Springer US},
+   pages={1-19},
+   language={English}
+}
+
+@article{CS14,
+    AUTHOR = {Choi, Sou-Cheng T. and Saunders, Michael A.},
+     TITLE = {{ALGORITHM} 937: {MINRES-QLP} for Singular Symmetric and {H}ermitian Linear Equations and Least-Squares Problems},
+   JOURNAL = {ACM Trans. Math. Software},
+  FJOURNAL = {Association for Computing Machinery. Transactions on
+	      Mathematical Software},
+	  Year={2014}
+}
+
+@article{CPS11,
+    AUTHOR = {Choi, Sou-Cheng T. and Paige, Christopher C. and Saunders, Michael A.},
+     TITLE = {{MINRES-QLP}: {A} {K}rylov subspace method for indefinite or singular symmetric systems},
+   JOURNAL = SISC,
+    PAGES  = {1810--1836},
+    VOLUME = 33,
+    number = 4,
+      year =  2011,
+      howpublished= {\url{http://arxiv.org/abs/1003.4042}}
+}
+
+
+@comment{
+*******************************************************************
+*
+* Reports
+*
+*******************************************************************
+}
+
+@techreport{HGPF15,
+author = {Holzinger, Andreas and Goebel, Randy and Palade, Vasile and Ferri, Massimo and  Morik, Katharina and Hess, Sibylle and Holzinger, Katharina and Chawla, Nitesh and  Tanaka, Yuzuru and Juda, Mateusz and Cesarini, Mirko and Choi, Sou-Cheng T.},
+title = {Advances in Interactive Knowledge Discovery},
+Institution = {Banff International Research Station for Mathematical Innovation and Discovery},
+Address = {Alberta, Canada},
+type = {Report},
+ year = {2015},
+}
+
+
+@techreport{CDHJ15,
+author = {Choi, Sou-Cheng T. and Ding, Yuhan and Hickernell, Fred J. and Jiang, Lan and Jim\'enez Rugama, Llu\'is Antoni and Tong, Xin, and Zhang, Yizhi and Zhou, Xuan},
+title = {{GAIL}---{G}uaranteed {A}utomatic {I}ntegration {L}ibrary in {MATLAB}: Documentation for Version~2.1},
+Institution = {Department of Applied Mathematics, Illinois Institute of Technology},
+Address = {Illinois, USA},
+type = {Report},
+ year = {2015},
+ url = {http://arxiv.org/abs/1503.06544}
+}
+
+@techreport{C14,
+    AUTHOR = {Choi, Sou-Cheng T.},
+     TITLE = {Generalized Minimal Residual Methods for Singular Linear Systems or Linear Least-Squares Problems},
+     YEAR = {2014},
+      NOTE = {Working}
+}
+
+@techreport{CS12b,
+AUTHOR      = {Choi, Sou-Cheng T. and Saunders, Michael A.},
+TITLE       = {{ALGORITHM \& DOCUMENTATION: MINRES-QLP} for singular symmetric and {Hermitian} linear equations and least-squares problems},
+INSTITUTION = {Computation Institute, University of Chicago},
+ADDRESS     = {Chicago, IL},
+TYPE        = {Technical Report},
+number      = {ANL/MCS-P3027-0812},
+YEAR        = 2012
+}
+
+@techreport{C13a,
+AUTHOR      = {Choi, Sou-Cheng T.},
+TITLE       = {A Painless {AMPL/PATH} Tutorial Introduction to Solving Complementarity Problems with a Case Study from {CIM-EARTH}},
+INSTITUTION = {University of Chicago},
+ADDRESS     = {IL},
+TYPE        = {{RDCEP} {Technical Report}},
+number      = {},
+YEAR        = 2013
+}
+
+@techreport{CM13,
+AUTHOR      = {Choi, Sou-Cheng T.  and Munson, Todd S.},
+TITLE       = {{OSCEF}: The Open-Source {CIM-EARTH} Framework User Manual for Version 1.0},
+INSTITUTION = {Computation Institute, University of Chicago},
+ADDRESS     = {IL},
+TYPE        = {Technical Report},
+number      = {ANL/MCS-TM-339},
+YEAR        = 2013
+} 
+
+
+@misc{CM14b,
+AUTHOR      = {Choi, Sou-Cheng T.  and Munson, Todd S.},
+TITLE       = {{OSCEF}: The {O}pen-{S}ource {CIM-EARTH} {F}ramework (Version 1.1), {C}++ Software},
+INSTITUTION = {Computation Institute, University of Chicago},
+ADDRESS     = {IL},
+YEAR        = 2014,
+howpublished= {\url{https://code.google.com/p/oscef/}}
+}
+ 
+
+@techreport{C13b,
+    AUTHOR = {Choi, Sou-Cheng T.},
+     TITLE = {Minimal Residual Methods for Complex Symmetric, Skew Symmetric, and Skew {H}ermitian Systems},
+   INSTITUTION = {Computation Institute, University of Chicago},
+   ADDRESS     = {Chicago, Illinois},
+   TYPE        = {Tech. Rep.},
+   number      = {ANL/MCS-P3028-0812},
+   Year        = {2013}
+}
+
+@techreport{C13e,
+    AUTHOR = {Choi, S.-C. T.},
+     TITLE = {Minimal Residual Methods for Solving Singular Unsymmetric or Non-{H}ermitian Linear Equations},
+   TYPE        = {Working},
+   Year        = {2013}
+}
+
+@unpublished{CD02,
+AUTHOR      = {Choi, Sou-Cheng T. and Donoho, David L. and Flesia, Ana Georgina and
+Huo, Xiaoming and Levi, Ofer and Shi, Danzhu},
+      title = {About {B}eamLab---a Toolbox for New Multiscale Methodologies},
+howpublished= {\url{http://www-stat.stanford.edu/~beamlab/}},
+YEAR        =  2002
+}
+
+
+@comment{
+*******************************************************************
+*
+* Conference papers
+*
+*******************************************************************
+}
+
+@conference{C13c,
+    AUTHOR = {Choi, Sou-Cheng T.},
+    TITLE  = {{MINRES-QLP P}ack and Reliable Reproducible Research via Staunch Scientific Software},
+   BOOKTITLE = {First Workshop on Sustainable Software for Science: Practice and Experiences},
+   ADDRESS     = {Denver, Colorado},
+   Year        = {2013}
+}
+
+@article{C14a,
+	author = {Sou-Cheng T. Choi},
+	title = {{MINRES-QLP P}ack and Reliable Reproducible Research via Supportable Scientific Software},
+	journal = {Journal of Open Research Software},
+	volume = {2},
+	number = {1},
+	year = {2014},
+        issn = {2049-9647},	
+         url = {http://openresearchsoftware.metajnl.com/article/view/jors.bb}
+}
+ 
+
+@article{CM13c,
+  title={{OSCEF API}s},
+  author={Choi, Sou-Cheng T.  and Munson, Todd S.},
+  INSTITUTION = {Computation Institute, University of Chicago},
+  ADDRESS     = {IL},
+  year={2013}
+}
+
+@comment{
+*******************************************************************
+*
+* Software
+*
+*******************************************************************
+}
+
+@Misc{CS06,
+AUTHOR      = {Choi, Sou-Cheng and Saunders, Michael A.},
+      title = {{MINRES-QLP} downloadable software},
+howpublished= {\url{http://www.stanford.edu/group/SOL/software/minresQLP.html}}
+}
+
+
+@Misc{C15b,
+AUTHOR      = {Choi, Sou-Cheng T.},
+      title = {{MINRES-QLP P}ack [{MATLAB} software]},
+      year = {2015},
+      note ={Working},
+
+howpublished= {\url{https://github.com/sctchoi/minres-qlp}}
+}
+
+
+@misc{MinresqlpMatlab,
+    AUTHOR = {Choi, Sou-Cheng T. and Saunders, Michael A.},
+     TITLE = {{MINRES-QLP} {MATLAB} Package},
+  HOWPUBLISHED = {\url{http://code.google.com/p/minres-qlp/}},
+      YEAR = {2011},
+     NOTES = {Software},
+}
+
+@misc{MinresqlpF90,
+    AUTHOR = {Choi, Sou-Cheng T. and Saunders, Michael A.},
+     TITLE = {{MINRES-QLP} {FORTRAN 90} Package},
+  HOWPUBLISHED = {\url{http://code.google.com/p/minres-qlp/}},
+      YEAR = {2012},
+     NOTES = {Software},
+}
+
+
+@misc{CDHJ13,
+  title={{GAIL}: {G}uaranteed {A}utomatic {I}ntegration {L}ibrary (Version 1.0), {MATLAB} Software},
+  author={Choi, Sou-Cheng T. and Ding, Yuhan and Hickernell, Fred J. and Jiang, Lan and Zhang, Yizhi},
+  year={2013},
+  month={Sep},
+howpublished= {\url{http://code.google.com/p/gail/}}
+}
+
+@misc{CDHJ14a,
+  title={{GAIL}: {G}uaranteed {A}utomatic {I}ntegration {L}ibrary (Version 1.3), {MATLAB} Software},
+  author={Choi, Sou-Cheng T. and Ding, Yuhan and Hickernell, Fred J. and Jiang, Lan and Zhang, Yizhi},
+  year={2014},
+  month={Feb},
+howpublished= {\url{http://code.google.com/p/gail/}},
+}
+
+
+@misc{CDHJ14b,
+  title={{GAIL}: {G}uaranteed {A}utomatic {I}ntegration {L}ibrary (Version 2.0), {MATLAB} Software},
+  author={Choi, Sou-Cheng T. and Ding, Yuhan and Hickernell, Fred J. and Jiang, Lan and {Jim\'enez Rugama}, Llu\'is Antoni  and Tong, Xin and Zhang, Yizhi and Zhou, Xuan},
+  year={2014},
+  month={Nov},
+howpublished= {\url{http://code.google.com/p/gail/}},
+}
+
+@misc{CDHJ15b,
+  title={{GAIL}: {G}uaranteed {A}utomatic {I}ntegration {L}ibrary (Version 2.1)},
+  author={Choi, Sou-Cheng T. and Ding, Yuhan and Hickernell, Fred J. and Jiang, Lan and {Jim\'enez Rugama}, Llu\'is Antoni  and Tong, Xin and Zhang, Yizhi and Zhou, Xuan},
+  year={2015},
+  month={Mar},
+  howpublished={MATLAB software, \url{http://gailgithub.github.io/GAIL_Dev}}
+}
+
+
+@misc{CM13d,
+AUTHOR      = {Choi, Sou-Cheng T.  and Munson, Todd S.},
+TITLE       = {{OSCEF}: The {O}pen-{S}ource {CIM-EARTH} {F}ramework (Version 1.0), {C}++ Software},
+INSTITUTION = {Computation Institute, University of Chicago},
+ADDRESS     = {IL},
+YEAR        = 2013,
+howpublished= {\url{https://code.google.com/p/oscef/}}
+}
+
+@misc{CM14b,
+AUTHOR      = {Choi, Sou-Cheng T.  and Munson, Todd S.},
+TITLE       = {{OSCEF}: The {O}pen-{S}ource {CIM-EARTH} {F}ramework (Version 1.1), {C}++ Software},
+INSTITUTION = {Computation Institute, University of Chicago},
+ADDRESS     = {IL},
+YEAR        = 2014,
+howpublished= {\url{https://code.google.com/p/oscef/}}
+}
+
+@misc{DFHL03,
+AUTHOR      = {Donoho, David and  Flesia, Ana Georgina and Huo, Xiaoming, and Levi, Ofer and Choi, Sou-Cheng T. and Shi, Danzhu},
+TITLE       = {{B}eam{L}ab (Version 200), {MATLAB} Software},
+INSTITUTION = {Department of Statistics, Stanford University},
+ADDRESS     = {CA},
+YEAR        = 2003,
+howpublished= {\url{http://statweb.stanford.edu/~beamlab/}}
+}
+
+@comment{
+*******************************************************************
+*
+* Websites
+*
+*******************************************************************
+}
+
+@misc{MinresqlpWebsite,
+    AUTHOR = {Choi, Sou-Cheng T.},
+     TITLE = {{MINRES-QLP} Community Website},
+  HOWPUBLISHED = {\url{http://code.google.com/p/minres-qlp/}},
+      YEAR = {2013},
+     NOTES = {Website},
+}
+
+@Misc{see-oscef,
+      key   = {SEE-OSCEF},
+      title = {{OSCEF} online code repository},
+howpublished= {\url{https://svn.ci.uchicago.edu/svn/see/oscef/}},
+}
+
+@Misc{ci-oscef,
+      key   = {CI-OSCEF},
+      title = {{OSCEF} project website},
+howpublished= {\url{http://www.ci.uchicago.edu/oscef/}},
+}
+
+@Misc{google-oscef,
+      key   = {WIKI-OSCEF},
+      title = {{OSCEF} Release and Community Website},
+howpublished= {\url{http://code.google.com/p/oscef/}},
+}
+
+@Misc{list-oscef,
+      key   = {LIST-OSCEF},
+      title = {{OSCEF} mailing list},
+howpublished= {\url{oscef@ci.uchicago.edu}},
+}
+
+
+@comment{
+*******************************************************************
+*
+* Conferences
+*
+*******************************************************************
+}
+
+@inproceedings{C15,
+  author    = {Choi, Sou{-}Cheng T.},
+  title     = {Machine Learning for Machine Data from a {CATI} Network},
+  booktitle = {JSM Proceedings, Statistical Computing Section},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1510.00772},
+ pages={515-522},
+Address = {Alexandria, VA: American Statistical Association},
+}
+
+@unpublished{CST04,
+title= {{HOT-PageRank}---{PageRank} that Tunes in to the Traffic Channel},
+author = {Choi, Sou-Cheng T. and Saunders, Michael A. and Tomlin, John A.},
+year = {2004},
+note= {SIAM Annual Meeting},
+URL= {http://www.siam.org/meetings/an04/},
+}
+ 
+
+@comment{
+*******************************************************************
+*
+* Dissertation
+*
+*******************************************************************
+}
+
+@phdthesis{C06,
+  author = {Choi, Sou-Cheng Terrya},
+  title  = {Iterative Methods for Singular Linear Equations and Least-Squares Problems},
+  school = {Institute for Computational \& Mathematical Engineering, Stanford University},
+  year   = {2006}
+}
